@@ -16,10 +16,26 @@ const Home = ({viewport}) => {
             </article>
         </section>
         <section>
-            <Card></Card>
-            <Card></Card>
-            <Card></Card>
-            <Card></Card>
+            <Card src="https://imageplaceholder.net/240" 
+                    alt="Platzhalter Card 1" 
+                    title="Platzhalter Card 1">
+                        <p>Card 1 Text</p>
+                    </Card>
+                    <Card src="https://imageplaceholder.net/240" 
+                    alt="Platzhalter Card 2" 
+                    title="Platzhalter Card 2">
+                        <p>Card 2 Text</p>
+                    </Card>
+                    <Card src="https://imageplaceholder.net/240"
+                    alt="Platzhalter Card 3"
+                    title="Platzhalter Card 3">
+                        <p>Card 3 Text</p>
+                    </Card>
+                    <Card src="https://imageplaceholder.net/240"
+                    alt="Platzhalter Card 4"
+                    title="Platzhalter Card 4">
+                        <p>Card 4 Text</p>
+                    </Card>
         </section>
         <section>
         <figure>

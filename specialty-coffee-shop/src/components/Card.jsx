@@ -1,10 +1,18 @@
 import React from "react";
 
-const Card = () => {
+const Card = ({src, alt, title, children}) => {
     return(
-        <div>
-            <div>This is the CARD</div>
-        </div>
+        <article>
+            <figure>
+                <img src={`${src}`} alt={`${alt}`}/>
+                <figcaption>
+                    <h3>
+                        {title}
+                    </h3>
+                </figcaption>
+            </figure>
+            {children}
+        </article>
     )
 }
 
