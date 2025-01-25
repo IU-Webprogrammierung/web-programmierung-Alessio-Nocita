@@ -38,7 +38,7 @@ function App() {
   const router = createBrowserRouter([
     {
       path: '/',
-      element: <Root />,
+      element: <Root viewport = {viewport}/>,
       children: [
         {
           index: true,
