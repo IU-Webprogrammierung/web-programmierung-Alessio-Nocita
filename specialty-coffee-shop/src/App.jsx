@@ -18,6 +18,23 @@ import Post from './pages/Post'
 
 
 function App() {
+
+  const viewportHeight = window.innerHeight;
+  // speichert der Viewport-Breite in der Variable "viewport"
+  const [viewport, setViewport] = useState(window.innerWidth);
+  // speichert den Viewport-Height in der Variable "viewportHeight"
+
+  
+// setzt die Variable "viewport" wenn die Seite geladen wird
+  window.addEventListener("load", () => {
+    setViewport(window.innerWidth);
+  });
+
+// aktualisiert die Variable "viewport" falls die Fenstergröße geändert wird
+  window.addEventListener("resize", () => {
+    setViewport(window.innerWidth);
+  });
+
   const router = createBrowserRouter([
     {
       path: '/',
@@ -25,32 +42,32 @@ function App() {
       children: [
         {
           index: true,
-          element: <Home />,
+          element: <Home viewport={viewport}/>,
           errorElement: <NotFound />
     },
     {
       path:'/about', 
-      element: <About />
+      element: <About viewport={viewport}/>
     },
     {
       path:'/blog',
-      element: <Blog />
+      element: <Blog viewport={viewport}/>
     },
     {
       path:'/shop',
-      element: <Shop />
+      element: <Shop viewport={viewport}/>
     },
     {
       path:'/contact',
-      element: <Contact />
+      element: <Contact viewport={viewport}/>
     },
     {
       path:'/impressum',
-      element: <Impressum />
+      element: <Impressum viewport={viewport}/>
     },
     {
       path:'/post/:slug',
-      element: <Post />
+      element: <Post viewport={viewport}/>
     },
     ]
   }
