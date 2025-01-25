@@ -1,9 +1,16 @@
 import React from "react";
+import Burgermenu from "./Burgermenu";
+import logo from "../assets/images/logo_with_text.svg";
 
 const MobileHeader = () => {
     return(
         <header>
-            <div>This is the MOBILE HEADER</div>
+            <figure>
+                <img src={logo} alt="Specialty Coffee Duisburg Logo" />
+                <figcaption>Specialty Coffee Duisburg Logo</figcaption>
+            </figure>
+            <Burgermenu />
+
         </header>
     )
 }

@@ -14,9 +14,6 @@ import Contact from './pages/Contact'
 import Impressum from './pages/Impressum'
 import Post from './pages/Post'
 
-
-
-
 function App() {
 
   const viewportHeight = window.innerHeight;
