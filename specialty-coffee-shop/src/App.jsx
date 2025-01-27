@@ -9,7 +9,7 @@ import About from './pages/About'
 import NotFound from './pages/NotFound'
 import Root from './Root'
 import Blog from './pages/Blog'
-import Shop from './pages/Shop'
+import Coffee from './pages/Coffee'
 import Contact from './pages/Contact'
 import Impressum from './pages/Impressum'
 import Post from './pages/Post'
@@ -51,8 +51,8 @@ function App() {
       element: <Blog viewport={viewport}/>
     },
     {
-      path:'/shop',
-      element: <Shop viewport={viewport}/>
+      path:'/coffee',
+      element: <Coffee viewport={viewport}/>
     },
     {
       path:'/contact',
