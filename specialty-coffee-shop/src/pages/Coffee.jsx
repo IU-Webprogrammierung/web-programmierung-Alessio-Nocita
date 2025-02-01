@@ -7,8 +7,8 @@ import guatemalaCoffeeBag from "../assets/images/guatemala_coffee_bag.png";
 const Coffee = () => {
     return (
     <main>
-        <section>
-            <h1>Unsere Kaffee</h1>
+        <section aria-labelledby="coffee-title">
+            <h1 id="coffee-title">Unsere Kaffee</h1>
             <h2>Beste ausgesuchte, qualitative Single Origins</h2>
 
             <article>

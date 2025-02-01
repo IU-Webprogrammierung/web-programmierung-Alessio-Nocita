@@ -5,9 +5,9 @@ import Button from "../components/Button";
 const Impressum = () => {
     return (
         <main>
-            <section>
+            <section aria-labelledby="impressum-title">
                 <article>
-                    <h1>Impressum</h1>
+                    <h1 id="impressum-title">Impressum</h1>
                     <h2>Angaben gemäß § 5 TMG</h2>
                     <p>Max Mustermann</p>
                     <p>Musterstraße 123</p>
@@ -25,7 +25,7 @@ const Impressum = () => {
                     <p>Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.</p>
                     <p>Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.</p>
                     </article>
-                    <Button text="Zurück zu home" link="/home"/>
+                    <Button text="Zurück zu Home" link="/home" aria="Zurück zu Home"/>
                     </section>
                     </main>
                     );

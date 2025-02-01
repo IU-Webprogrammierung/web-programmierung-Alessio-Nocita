@@ -5,9 +5,9 @@ import aboutUs from "../assets/images/about.png";
 const About = () => {
     return (
         <main>
-            <section>
+            <section aria-labelledby="title">
                 <article>
-                    <h1>Über uns</h1>
+                    <h1 id="title">Über uns</h1>
                     <figure>
                         <img src={aboutUs} alt="Die Inhaber in der Rösterei" />
                         <figcaption>Die Inhaber in der Rösterei</figcaption>

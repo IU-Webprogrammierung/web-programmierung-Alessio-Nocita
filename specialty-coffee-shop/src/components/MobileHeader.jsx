@@ -9,7 +9,6 @@ const MobileHeader = () => {
                 <img src={logo} alt="Specialty Coffee Duisburg Logo" />
             </figure>
             <Burgermenu />
-
         </header>
     )
 }

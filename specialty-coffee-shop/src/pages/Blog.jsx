@@ -12,7 +12,7 @@ const Blog = () => {
     return (
         <main>
             <h1>Blog</h1>
-            <section>
+            <section aria-label="Blog-Artikel">
                 <article>
                     <div>
                         <h3>Äthiopien: Ein Streifzug durch die Wiege des Kaffees</h3>
@@ -22,7 +22,7 @@ const Blog = () => {
                         <img src={blogPost1} alt="Kaffee-Plantage in Äthiopien" />
                         <figcaption>Kaffee-Plantage in Äthiopien</figcaption>
                     </figure>
-                    <Button text="Mehr lesen" link="/post/ethiopia" />
+                    <Button text="Mehr lesen" link="/post/ethiopia" aria="Erfahre mehr über den Kaffee-Land Äthiopien"/>
 
                 </article>
  
@@ -36,7 +36,7 @@ const Blog = () => {
                     <h3>Der perfekte Espresso: Tipps und Tricks für zu Hause</h3>
                     <p>Espresso ist die Königsdisziplin der Kaffeezubereitung – und mit ein paar einfachen Tricks kannst du auch zu Hause ein perfektes Ergebnis erzielen. Wir zeigen dir, wie du deinen Espresso optimal extrahierst, welcher Mahlgrad der richtige ist und worauf du bei der Wahl der Bohnen achten solltest. Mit unseren Tipps und etwas Übung gelingt dir bald ein Espresso wie vom Profi...</p>
                 </div>
-                <Button text="Mehr lesen" link="/post/espresso" />
+                <Button text="Mehr lesen" link="/post/espresso" aria="Erfahre mehr darüber, wie man den perfekten Espresso zubereitet"/>
 
             </article>
             <article>
@@ -49,7 +49,7 @@ const Blog = () => {
                     <h3>Single Origin vs. Blend: Die Unterschiede erklärt</h3>
                     <p>Single Origin oder Blend – was ist der Unterschied und welcher Kaffee passt am besten zu deinem Geschmack? Wir erklären dir die Vor- und Nachteile beider Varianten und zeigen dir, wie du die richtige Wahl für deinen perfekten Kaffeegenuss triffst...</p>
                 </div>
-                <Button text="Mehr lesen" link="/post/origin" />
+                <Button text="Mehr lesen" link="/post/origin" aria="Erfahre mehr über den Unterschied zwischen Single Origins und Blends"/>
 
             </article>
 
@@ -64,24 +64,24 @@ const Blog = () => {
                     <p>Ein guter Kaffee ist ein Genuss – aber ein Kaffee mit kunstvoller Latte Art ist ein echtes Erlebnis. Die filigranen Muster, die Baristas auf den samtigen Milchschaum zaubern, sind nicht nur ein optischer Hingucker, sondern auch ein Zeichen für höchste Kaffeequalität und Handwerkskunst. Latte Art entsteht durch das perfekte Zusammenspiel von Espresso und geschäumter Milch. Entscheidend ist die richtige Textur...</p>
 
                 </div>
-                <Button text="Mehr lesen" link="/post/latte" />
+                <Button text="Mehr lesen" link="/post/latte" aria="Erfahre mehr über die Kunst des Latte Art"/>
 
             </article>
             </section>
-            <aside>
-            <h2>Artikelübersicht</h2>
+            <aside aria-labelledby="aside-title">
+            <h2 id="aside-title">Artikelübersicht</h2>
             <ul>
                 <li>
-                    <Link to="/post/ethiopia">Äthiopien: Ein Streifzug durch die Wiege des Kaffees</Link>
+                    <Link to="/post/ethiopia" aria-label="Erfahre mehr über den Kaffee-Land Äthiopien">Äthiopien: Ein Streifzug durch die Wiege des Kaffees</Link>
                 </li>
                 <li>
-                    <Link to="/espresso">Der perfekte Espresso: Tipps und Tricks für zu Hause</Link>
+                    <Link to="/espresso" aria-label="Erfahre mehr darüber, wie man den perfekten Espresso zubereitet">Der perfekte Espresso: Tipps und Tricks für zu Hause</Link>
                     </li>
                 <li>
-                <Link to="/origin">Single Origin vs. Blend: Die Unterschiede erklärt</Link>
+                <Link to="/origin" aria-label="Erfahre mehr über den Unterschied zwischen Single Origins und Blends">Single Origin vs. Blend: Die Unterschiede erklärt</Link>
                 </li>
                 <li>
-                <Link to="/post/latte">Die Kunst der Latte Art</Link>
+                <Link to="/post/latte" aria-label="Erfahre mehr über die Kunst des Latte Art">Die Kunst der Latte Art</Link>
                 </li>
                 </ul>
             </aside>
