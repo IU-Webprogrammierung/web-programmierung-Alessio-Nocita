@@ -36,6 +36,7 @@ function App() {
     {
       path: '/',
       element: <Root viewport = {viewport}/>,
+      errorElement: <NotFound />,
       children: [
         {
           index: true,
@@ -44,27 +45,33 @@ function App() {
     },
     {
       path:'/about', 
-      element: <About viewport={viewport}/>
+      element: <About viewport={viewport}/>,
+      errorElement: <NotFound />
     },
     {
       path:'/blog',
-      element: <Blog viewport={viewport}/>
+      element: <Blog viewport={viewport}/>,
+      errorElement: <NotFound />
     },
     {
       path:'/coffee',
-      element: <Coffee viewport={viewport}/>
+      element: <Coffee viewport={viewport}/>,
+      errorElement: <NotFound />
     },
     {
       path:'/contact',
-      element: <Contact viewport={viewport}/>
+      element: <Contact viewport={viewport}/>,
+      errorElement: <NotFound />
     },
     {
       path:'/impressum',
-      element: <Impressum viewport={viewport}/>
+      element: <Impressum viewport={viewport}/>,
+      errorElement: <NotFound />
     },
     {
       path:'/post/:slug',
-      element: <Post viewport={viewport}/>
+      element: <Post viewport={viewport}/>,
+      errorElement: <NotFound />
     },
     ]
   }
