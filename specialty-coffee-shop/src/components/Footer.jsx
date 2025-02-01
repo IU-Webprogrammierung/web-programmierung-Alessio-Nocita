@@ -15,7 +15,7 @@ const Footer = () => {
             <figure>
                 <img src={instagram_logo} alt="Instagram Logo" />
             </figure>
-            <Link to="/impressum">Impressum</Link>
+            <Link to="/impressum" aria-label="Gehe zum Impressum">Impressum</Link>
         </footer>
     )
 }

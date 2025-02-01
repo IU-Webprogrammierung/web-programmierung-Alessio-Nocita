@@ -15,6 +15,7 @@ const Burgermenu = () => {
     <div
       className={`${styles.navIcon} ${isOpen ? styles.open : ""}`}
       onClick={toggleMenu}
+      aria-label="Gehe zur mobilen Navigation"
     >
       <span></span>
       <span></span>

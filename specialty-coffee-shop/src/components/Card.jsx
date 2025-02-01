@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = ({src, alt, title, children}) => {
     return(
-        <article>
+        <article aria-label={alt}>
             <figure>
                 <img src={`${src}`} alt={`${alt}`}/>
                 <figcaption>

@@ -3,30 +3,30 @@ import { NavLink } from "react-router-dom";
 
 const MobileMenu = () => {
     return(
-        <nav>
+        <nav aria-label="Navigation-Menu">
             <ul>
                 <li>
-                    <NavLink to="/" exact>
+                    <NavLink to="/" aria-label="Gehe zur Homepage" exact>
                         Home
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/about">
+                    <NavLink aria-label="Gehe zur 'Über uns'" to="/about">
                         Über uns
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/coffee">
+                    <NavLink aria-label="Gehe zu 'Unser Kaffee'" to="/coffee">
                         Unser Kaffee
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/blog">
+                    <NavLink aria-label="Gehe zum Blog" to="/blog">
                         Blog
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/contact">
+                    <NavLink aria-label="Gehe zum Kontaktformular" to="/contact">
                         Kontakt
                     </NavLink>
                 </li>
