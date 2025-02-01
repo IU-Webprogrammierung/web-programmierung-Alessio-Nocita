@@ -3,12 +3,20 @@ import React from "react";
 import Card from "../components/Card";
 import Button from "../components/Button";
 
+import heroImage from "../assets/images/specialty_coffee_duisburg_home.png"
+import coffeeBeans from "../assets/images/coffee_beans.png"
+import featuredBlogPostImage from "../assets/images/ethiopia_coffee_plantages.png"
+import cardIcon1 from "../assets/images/coffee-bag.svg"
+import cardIcon2 from "../assets/images/handshake.svg"
+import cardIcon3 from "../assets/images/espresso-machine.svg"
+import cardIcon4 from "../assets/images/calendar.svg"
+
 const Home = ({viewport}) => {
     return (
     <main>
         <section>
             <figure>
-                <img src="https://imageplaceholder.net/382" alt="Alessio Nocita, Gründer von Specialty Coffee Duisburg" />
+                <img src={heroImage} alt="Alessio Nocita, Gründer von Specialty Coffee Duisburg" />
                 <figcaption>Alessio Nocita, Gründer von Specialty Coffee Duisburg</figcaption>
             </figure>
             <article>
@@ -17,24 +25,23 @@ const Home = ({viewport}) => {
             </article>
         </section>
         <section>
-            <Card src="https://imageplaceholder.net/240" 
-                    alt="Icon einer Kaffee-Pflanze" 
+            <Card src={cardIcon1} 
+                    alt="Icon einer Kaffee-Tüte" 
                     title="Einzigartige Sorten">
                         <p>Wir wählen nur die besten Bohnen aus nachhaltigem Anbau, um dir ein unvergleichliches Geschmackserlebnis zu bieten – von exotischen Fruchtnoten bis zu nussigen Nuancen.</p>
                     </Card>
-                    <Card src="https://imageplaceholder.net/240" 
-                    alt="Icon eines Kaffee-Bohne" 
-                    title="Sorgfältige Röstung">
-                        <p>Jede Bohne wird bei uns in Duisburg schonend geröstet, um die feinen Aromen perfekt zur Geltung zu bringen. Frische und Qualität, die du schmeckst.
-
+                    <Card src={cardIcon2} 
+                    alt="Icon eines Handschlags" 
+                    title="Fair Trade">
+                        <p>Wir setzen auf direkte Partnerschaften mit Kaffeebauern weltweit, um faire Preise und Bedingungen zu garantieren. Gemeinsam für eine nachhaltige Zukunft
 </p>
                     </Card>
-                    <Card src="https://imageplaceholder.net/240"
+                    <Card src={cardIcon3}
                     alt="Icon einer Kaffeemaschine"
                     title="Genuss hier vor Ort">
                         <p>Erlebe unsere Kaffeespezialitäten direkt in unserer gemütlichen Bar in Duisburg. Frisch aufgebrüht, mit Liebe zubereitet – der perfekte Ort für echte Kaffeegenießer.</p>
                     </Card>
-                    <Card src="https://imageplaceholder.net/240"
+                    <Card src={cardIcon4}
                     alt="Icon eines Kalenders"
                     title="Workshops & Events">
                         <p>Lerne die Kunst des perfekten Kaffees in unseren Barista-Kursen oder entdecke exklusive Coffee-Tastings. Werde selbst zum Experten!</p>
@@ -42,7 +49,7 @@ const Home = ({viewport}) => {
         </section>
         <section>
         <figure>
-                <img src="https://imageplaceholder.net/382" alt="Unser Kaffee, von uns mit Leidenschaft und Können geröstet" />
+                <img src={coffeeBeans} alt="Unser Kaffee, von uns mit Leidenschaft und Können geröstet" />
                 <figcaption>Unser Kaffee, von uns mit Leidenschaft und Können geröstet</figcaption>
             </figure>
             <article>
@@ -54,7 +61,7 @@ const Home = ({viewport}) => {
             <article>
             <h1>Äthiopien: Ein Streifzug durch die Wiege des Kaffees</h1>
                 <figure>
-                    <img src="https://imageplaceholder.net/382" alt="Das neue Blog-Post" />
+                    <img src={featuredBlogPostImage} alt="Das neue Blog-Post" />
                     <figcaption>Das neue Blog-Post</figcaption>
                 </figure>
                 <p>"Äthiopien gilt als die Wiege des Kaffees – hier, in den hochgelegenen Regionen des Horns von Afrika, hat die Pflanze ihren Ursprung. Schon die Legende vom Hirten Kaldi, dessen Ziegen nach dem Verzehr der Kaffeekirschen voller Energie tanzten, erzählt von der tiefen kulturellen Verbindung Äthiopiens mit dem Kaffee. Doch Äthiopien ist nicht nur eine Ursprungsregion, sondern auch eine Schatzkammer aromatischer Vielfalt...</p>

@@ -1,35 +1,42 @@
 import React from "react";
 
+import brazilCoffeeBag from "../assets/images/brazil_coffee_bag.png";
+import indiaCoffeeBag from "../assets/images/india_coffee_bag.png";
+import guatemalaCoffeeBag from "../assets/images/guatemala_coffee_bag.png";
+
 const Coffee = () => {
     return (
     <main>
         <section>
             <h1>Unsere Kaffee</h1>
-            <h2>Subtitle</h2>
+            <h2>Beste ausgesuchte, qualitative Single Origins</h2>
 
             <article>
                 <figure>
-                    <img srsc="https://imageplaceholder.net/382" alt="Kaffeebohnen" />
-                    <figcaption>Kaffeebohnen</figcaption>
+                    <img src={brazilCoffeeBag} alt="Unser Brazil Kaffee" />
+                    <figcaption>Unser Brazil Kaffee</figcaption>
                 </figure>
                 <h3>Brazil</h3>
-                <p>Unsere Kaffeesorten stammen aus den besten Anbaugebieten der Welt. Von den fruchtigen Aromen äthiopischer Bohnen bis zu den schokoladigen Noten brasilianischer Ernten – wir bieten dir eine Auswahl an Kaffees, die dich begeistern wird. Entdecke die Vielfalt der Kaffee-Welt und finde deinen neuen Lieblingskaffee bei uns.</p>
+                <h4>Sanfte Süße und Schokoladige Noten</h4>
+                <p>Dieser Kaffee aus Brasilien besticht durch sein vollmundiges Aroma mit feinen Noten von Schokolade, Nüssen und Karamell. Die niedrige Säure und der cremige Körper machen ihn zu einem perfekten Begleiter für Espresso, Cappuccino oder einfach pur als Filterkaffee.</p>
             </article>
             <article>
                 <figure>
-                    <img src="https://imageplaceholder.net/382" alt="Kaffeebohnen" />
-                    <figcaption>Kaffeebohnen</figcaption>
+                    <img src={indiaCoffeeBag} alt="Unser India Kaffee" />
+                    <figcaption>Unser India Kaffee</figcaption>
                 </figure>
                 <h3>India</h3>
-                <p>Unsere Kaffeesorten stammen aus den besten Anbaugebieten der Welt. Von den fruchtigen Aromen äthiopischer Bohnen bis zu den schokoladigen Noten brasilianischer Ernten – wir bieten dir eine Auswahl an Kaffees, die dich begeistern wird. Entdecke die Vielfalt der Kaffee-Welt und finde deinen neuen Lieblingskaffee bei uns.</p>
+                <h4>Würziger und exotischer Kaffee</h4>
+                <p>Ein Kaffee mit Charakter! Unser India-Kaffee beeindruckt mit würzigen Noten von Zartbitterschokolade, Gewürzen und einem Hauch von dunklem Honig. Sein kräftiger Körper und die dezente Säure machen ihn ideal für alle, die ein intensives Geschmackserlebnis suchen.</p>
             </article>
             <article>
                 <figure>
-                    <img src="https://imageplaceholder.net/382" alt="Kaffeebohnen" />
-                    <figcaption>Kaffeebohnen</figcaption>
+                    <img src={guatemalaCoffeeBag} alt="Unser Guatemala Kaffee" />
+                    <figcaption>Unser Guatemala Kaffee</figcaption>
                 </figure>
                 <h3>Guatemala</h3>
-                <p>Unsere Kaffeesorten stammen aus den besten Anbaugebieten der Welt. Von den fruchtigen Aromen äthiopischer Bohnen bis zu den schokoladigen Noten brasilianischer Ernten – wir bieten dir eine Auswahl an Kaffees, die dich begeistern wird. Entdecke die Vielfalt der Kaffee-Welt und finde deinen neuen Lieblingskaffee bei uns.</p>
+                <h4>Fruchtig und komplexer Kaffee</h4>
+                <p>Dieser Hochlandkaffee aus Guatemala verführt mit lebendigen Aromen von roten Beeren, feiner Zitrussäure und einem Hauch von Kakao. Die ausgewogene Balance zwischen Süße und Säure macht ihn zu einem exzellenten Genuss für Pour-Over, French Press oder als aromatischen Filterkaffee.</p>
             </article>
         </section>
     </main>);
