@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Button = ({text, link}) => {
+const Button = ({text, link, aria}) => {
     return(
-        <button><Link to={link}>{text}</Link></button>
+        <button aria-label={aria} tabIndex="0"><Link to={link}>{text}</Link></button>
     )
 }
 

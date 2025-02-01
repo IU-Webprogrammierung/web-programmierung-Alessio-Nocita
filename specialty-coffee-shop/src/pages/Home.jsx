@@ -14,17 +14,17 @@ import cardIcon4 from "../assets/images/calendar.svg"
 const Home = ({viewport}) => {
     return (
     <main>
-        <section>
+        <section aria-labelledby="hero-section">
             <figure>
                 <img src={heroImage} alt="Alessio Nocita, Gründer von Specialty Coffee Duisburg" />
                 <figcaption>Alessio Nocita, Gründer von Specialty Coffee Duisburg</figcaption>
             </figure>
             <article>
-            <h1>Einzigartigen Geschmack und Aromen</h1>
+            <h1 id="hero-section">Einzigartigen Geschmack und Aromen</h1>
             <p>Bei Specialty Coffee Duisburg verbinden wir handverlesene Kaffeebohnen aus nachhaltigem Anbau mit unserer Leidenschaft für außergewöhnliche Aromen. Wir setzen auf direkte Partnerschaften mit Farmern, um Qualität, Transparenz und faire Bedingungen zu garantieren. Unsere sorgfältige Röstung bringt die individuellen Geschmacksprofile jeder Herkunft zur Geltung – von fruchtig-leicht bis schokoladig-intensiv. Genieße Kaffee, der nicht nur gut schmeckt, sondern auch Gutes bewirkt.</p>
             </article>
         </section>
-        <section>
+        <section aria-label="Übersicht unseres Service">
             <Card src={cardIcon1} 
                     alt="Icon einer Kaffee-Tüte" 
                     title="Einzigartige Sorten">
@@ -47,25 +47,25 @@ const Home = ({viewport}) => {
                         <p>Lerne die Kunst des perfekten Kaffees in unseren Barista-Kursen oder entdecke exklusive Coffee-Tastings. Werde selbst zum Experten!</p>
                     </Card>
         </section>
-        <section>
+        <section aria-labelledby="coffee-title">
         <figure>
                 <img src={coffeeBeans} alt="Unser Kaffee, von uns mit Leidenschaft und Können geröstet" />
                 <figcaption>Unser Kaffee, von uns mit Leidenschaft und Können geröstet</figcaption>
             </figure>
             <article>
-            <h1>Unser Kaffee</h1>
+            <h2 id="coffee-title">Unser Kaffee</h2>
             <p>Unser Kaffee ist so vielfältig wie die Regionen, aus denen er stammt. Von den fruchtig-floralen Noten äthiopischer Bohnen über die schokoladige Tiefe brasilianischer Ernten bis hin zu den würzigen Akzenten indischer Spezialitäten und der lebendigen Süße aus Guatemala – wir kennen und lieben den Charakter jeder Herkunft. Durch unsere schonende Röstung und die Kunst, außergewöhnliche Blends zu kreieren, bringen wir das Beste aus jeder Bohne in deine Tasse. Das Ergebnis: Kaffee, der nicht nur schmeckt, sondern Geschichten erzählt – von den Feldern bis in deine Tasse.</p>
             </article>
         </section>
-        <section>
+        <section aria-labelledby="featured-blog-post">
             <article>
-            <h1>Äthiopien: Ein Streifzug durch die Wiege des Kaffees</h1>
+            <h2 id="featured-blog-post">Äthiopien: Ein Streifzug durch die Wiege des Kaffees</h2>
                 <figure>
                     <img src={featuredBlogPostImage} alt="Das neue Blog-Post" />
                     <figcaption>Das neue Blog-Post</figcaption>
                 </figure>
                 <p>"Äthiopien gilt als die Wiege des Kaffees – hier, in den hochgelegenen Regionen des Horns von Afrika, hat die Pflanze ihren Ursprung. Schon die Legende vom Hirten Kaldi, dessen Ziegen nach dem Verzehr der Kaffeekirschen voller Energie tanzten, erzählt von der tiefen kulturellen Verbindung Äthiopiens mit dem Kaffee. Doch Äthiopien ist nicht nur eine Ursprungsregion, sondern auch eine Schatzkammer aromatischer Vielfalt...</p>
-                <Button text="Mehr dazu" link="#" />
+                <Button text="Mehr dazu" link="#" aria="Lese unser letzter Blog-Artikel"/>
             </article>
         </section>
     </main>
