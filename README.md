@@ -46,7 +46,7 @@ Um dies zu bewerkstelligen wurde folgendes implementiert:
 - Schriftarten
 - Accessibility-Code (aria-labels, alt-Bildtexte, figcaptions, tabindexes)
 
-Da das Projekt in React-Format modular aufgebaut wurde, wurde den JSX-Code zum Teil auf JSX-Seitenkomponenten verteilt (im React Router 6 Format), zum Teil auf JSX-UI-Komponenten, die dann als komponenten in den Pages mit eingebaut sind.
+Da das Projekt in React-Format modular aufgebaut wurde, wurde den JSX-Code zum Teil auf JSX-Seitenkomponenten verteilt (im React Router 6 Format), zum Teil auf JSX-UI-Komponenten, die dann als Komponenten in den Pages mit eingebaut sind.
 
 Leere SASS-Modules Dateien wurden schon bereitgestellt (allerdings noch nicht in den JSX-Komponenten verlinkt). Die von React Vite automatisch hergestellten CSS-Dateien wurden vorerst weitgehend nicht verändert, nur im SASS-Format umgewandelt.
 
