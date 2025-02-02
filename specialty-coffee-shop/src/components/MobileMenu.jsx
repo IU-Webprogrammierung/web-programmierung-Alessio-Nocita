@@ -1,6 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+// Navigationsmenü für Mobile-Ansicht
+// enthält Links zu den Hauptseiten der Website
+// wird als Slider-Menü angezeigt
+// und wird durch anklicken des Burgermenü-Icons geöffnet
+
 const MobileMenu = () => {
     return(
         <nav aria-label="Navigation-Menu">

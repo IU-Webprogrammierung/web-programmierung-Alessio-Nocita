@@ -2,6 +2,10 @@ import React from "react";
 
 import blogPost from "../assets/images/ethiopia_coffee_plantages.png";
 
+// Single Blog Post-Seite
+// enthält Titel, Autor, Veröffentlichungsdatum, Text und Bild
+// (hartkodiert)
+
 const Post = () => {
 
     return (

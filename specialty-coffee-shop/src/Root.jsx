@@ -7,6 +7,9 @@ import MobileMenu from "./components/MobileMenu";
 import DesktopMenu from "./components/DesktopMenu";
 import Footer from "./components/Footer";
 
+// Root-Komponente. Zeigt die Header-, Menu- und Footer-Komponenten responsiv an. 
+// Die Viewport-Größe wird als props von App.jsx übergeben.
+
 const Root = ({viewport}) => {
     return (
     <>

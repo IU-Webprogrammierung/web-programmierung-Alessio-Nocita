@@ -2,6 +2,8 @@ import React from "react";
 
 import aboutUs from "../assets/images/about.png";
 
+// About-Seite mit Bild und Präsentationstext
+
 const About = () => {
     return (
         <main>

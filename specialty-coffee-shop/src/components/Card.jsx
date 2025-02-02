@@ -1,5 +1,8 @@
 import React from "react";
 
+// Card-Komponente
+// diese importiert Bild-Adresse, alt-Text, Card-Titel und Card-Text als props
+
 const Card = ({src, alt, title, children}) => {
     return(
         <article aria-label={alt}>

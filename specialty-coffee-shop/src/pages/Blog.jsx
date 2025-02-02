@@ -8,6 +8,10 @@ import blogPost2 from "../assets/images/espresso_lesson.png";
 import blogPost3 from "../assets/images/single_origin_vs_blend.png";
 import blogPost4 from "../assets/images/latte_art.png";
 
+// Übersicht der Blog-Artikel mit Bildern und Links zu den einzelnen Artikeln
+// (hartkodiert)
+// Zur Demonstrationszwecken sind alle Artikel zu einem einzigen Blog-Post verlinkt
+
 const Blog = () => {
     return (
         <main>

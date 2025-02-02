@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+// 404-Seite, die angezeigt wird, wenn eine Seite nicht gefunden wird
+
 const NotFound = () => {
     return (
         <main>

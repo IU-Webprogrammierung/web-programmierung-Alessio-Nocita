@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 import Burgermenu from "./Burgermenu";
 import logo from "../assets/images/logo_with_text.svg";
 
+// Mobile-Header-Komponente
+// zeigt das Logo (mit Homepage verlinkt) und das Burgermenu als anclickbares Icon an
+
 const MobileHeader = () => {
     return(
         <header>

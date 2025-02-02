@@ -32,6 +32,8 @@ function App() {
     setViewport(window.innerWidth);
   });
 
+  // erstellt die Router-Konfiguration für alle Seiten
+
   const router = createBrowserRouter([
     {
       path: '/',

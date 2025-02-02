@@ -1,6 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+// Navigationsmenü für Desktop-Ansicht
+// enthält Links zu den Hauptseiten der Website
+
 const DesktopMenu = () => {
     return(
         <nav aria-label="Navigation-Menu">

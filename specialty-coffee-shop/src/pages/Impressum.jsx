@@ -2,6 +2,8 @@ import React from "react";
 
 import Button from "../components/Button";
 
+// Impressum-Seite mit rechtlichen Informationen
+
 const Impressum = () => {
     return (
         <main>

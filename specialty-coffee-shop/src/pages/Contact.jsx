@@ -1,6 +1,10 @@
 import React from "react";
 import Button from "../components/Button";
 
+// Kontaktformular-Seite
+// der Button ist "tot" und hat keine Funktion
+// (keine Backend-Anbindung)
+
 const Contact = () => {
     return (
     <section>

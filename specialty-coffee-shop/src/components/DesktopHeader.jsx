@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 
 import logo from "../assets/images/logo_with_text.svg";
 
+// Desktop-Header-Komponente
+// zeigt das Logo (mit Homepage verlinkt) an
+
 const DesktopHeader = () => {
     return(
         <header>
