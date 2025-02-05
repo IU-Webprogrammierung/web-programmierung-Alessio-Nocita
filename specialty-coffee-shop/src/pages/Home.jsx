@@ -55,8 +55,8 @@ const Home = ({viewport}) => {
         {/* Section zur Präsentation des Kaffees */}
         <section aria-labelledby="coffee-title">
         <figure>
-                <img src={coffeeBeans} alt="Unser Kaffee, von uns mit Leidenschaft und Können geröstet" />
-                <figcaption>Unser Kaffee, von uns mit Leidenschaft und Können geröstet</figcaption>
+                <img src={coffeeBeans} alt="Kaffeebohnen auf einem rustikalen Tisch vor Bokeh-Lichtern" />
+                <figcaption>Kaffeebohnen auf einem rustikalen Tisch vor Bokeh-Lichtern</figcaption>
             </figure>
             <article>
             <h2 id="coffee-title">Unser Kaffee</h2>
