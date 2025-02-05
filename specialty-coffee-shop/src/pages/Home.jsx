@@ -18,8 +18,8 @@ const Home = ({viewport}) => {
         {/* Hero-Section */}
         <section aria-labelledby="hero-section">
             <figure>
-                <img src={heroImage} alt="Alessio Nocita, Gründer von Specialty Coffee Duisburg" />
-                <figcaption>Alessio Nocita, Gründer von Specialty Coffee Duisburg</figcaption>
+                <img src={heroImage} alt="Die Gründer von Specialty Coffee Duisburg in der Rösterei" />
+                <figcaption>Die Gründer von Specialty Coffee Duisburg in der Rösterei</figcaption>
             </figure>
             <article>
             <h1 id="hero-section">Einzigartigen Geschmack und Aromen</h1>
@@ -69,8 +69,8 @@ const Home = ({viewport}) => {
             <article>
             <h2 id="featured-blog-post">Äthiopien: Ein Streifzug durch die Wiege des Kaffees</h2>
                 <figure>
-                    <img src={featuredBlogPostImage} alt="Das neue Blog-Post" />
-                    <figcaption>Das neue Blog-Post</figcaption>
+                    <img src={featuredBlogPostImage} alt="Eine Landschaft einer Kaffee-Plantage in Äthiopien" />
+                    <figcaption>Eine Landschaft einer Kaffee-Plantage in Äthiopien</figcaption>
                 </figure>
                 <p>"Äthiopien gilt als die Wiege des Kaffees – hier, in den hochgelegenen Regionen des Horns von Afrika, hat die Pflanze ihren Ursprung. Schon die Legende vom Hirten Kaldi, dessen Ziegen nach dem Verzehr der Kaffeekirschen voller Energie tanzten, erzählt von der tiefen kulturellen Verbindung Äthiopiens mit dem Kaffee. Doch Äthiopien ist nicht nur eine Ursprungsregion, sondern auch eine Schatzkammer aromatischer Vielfalt...</p>
                 <Button text="Mehr dazu" link="#" aria="Lese unser letzter Blog-Artikel"/>
