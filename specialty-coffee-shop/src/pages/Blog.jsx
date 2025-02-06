@@ -75,8 +75,11 @@ const Blog = ({viewport}) => {
             </article>
             </section>
             
-            {viewport > 1024 && <PostListSidebar />}
+            {/* Sidebar mit Links zu den Blog-Artikeln
+            (wird nur bei der Desktop-Ansicht angezeigt) */}
             
+            {viewport > 1024 && <PostListSidebar />}
+
         </main>
     );
     }
