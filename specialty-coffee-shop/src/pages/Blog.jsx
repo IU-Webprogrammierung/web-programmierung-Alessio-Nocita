@@ -3,6 +3,8 @@ import React from "react";
 import Button from "../components/Button";
 import { Link } from "react-router-dom";
 
+import PostListSidebar from "../components/PostListSidebar";
+
 import blogPost1 from "../assets/images/ethiopia_coffee_plantages_square.png";
 import blogPost2 from "../assets/images/espresso_lesson.png";
 import blogPost3 from "../assets/images/single_origin_vs_blend.png";
@@ -12,7 +14,7 @@ import blogPost4 from "../assets/images/latte_art.png";
 // (hartkodiert)
 // Zur Demonstrationszwecken sind alle Artikel zu einem einzigen Blog-Post verlinkt
 
-const Blog = () => {
+const Blog = ({viewport}) => {
     return (
         <main>
             <h1>Blog</h1>
@@ -72,23 +74,9 @@ const Blog = () => {
 
             </article>
             </section>
-            <aside aria-labelledby="aside-title">
-            <h2 id="aside-title">Artikelübersicht</h2>
-            <ul>
-                <li>
-                    <Link to="/post/ethiopia" aria-label="Erfahre mehr über den Kaffee-Land Äthiopien">Äthiopien: Ein Streifzug durch die Wiege des Kaffees</Link>
-                </li>
-                <li>
-                    <Link to="/espresso" aria-label="Erfahre mehr darüber, wie man den perfekten Espresso zubereitet">Der perfekte Espresso: Tipps und Tricks für zu Hause</Link>
-                    </li>
-                <li>
-                <Link to="/origin" aria-label="Erfahre mehr über den Unterschied zwischen Single Origins und Blends">Single Origin vs. Blend: Die Unterschiede erklärt</Link>
-                </li>
-                <li>
-                <Link to="/post/latte" aria-label="Erfahre mehr über die Kunst des Latte Art">Die Kunst der Latte Art</Link>
-                </li>
-                </ul>
-            </aside>
+            
+            {viewport > 1024 && <PostListSidebar />}
+            
         </main>
     );
     }
