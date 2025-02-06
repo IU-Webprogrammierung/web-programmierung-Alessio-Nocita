@@ -43,7 +43,7 @@ Um dies zu bewerkstelligen wurde folgendes implementiert:
 - Code-Kommentare
 - Texte
 - Bilder und SVG-Icons
-- Schriftarten
+- Schriftarten (als Adobe Fonts Projekt Link)
 - Accessibility-Code (aria-labels, alt-Bildtexte, figcaptions, tabindexes)
 
 Da das Projekt in React-Format modular aufgebaut wurde, wurde den JSX-Code zum Teil auf JSX-Seitenkomponenten verteilt (im React Router 6 Format), zum Teil auf JSX-UI-Komponenten, die dann als Komponenten in den Pages mit eingebaut sind.
