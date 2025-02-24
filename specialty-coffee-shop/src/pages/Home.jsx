@@ -3,6 +3,8 @@ import React from "react";
 import Card from "../components/Card";
 import Button from "../components/Button";
 
+import styles from "./Home.module.sass";
+
 import heroImage from "../assets/images/specialty_coffee_duisburg_home.png"
 import coffeeBeans from "../assets/images/coffee_beans.png"
 import featuredBlogPostImage from "../assets/images/ethiopia_coffee_plantages.png"
@@ -16,7 +18,7 @@ const Home = ({viewport}) => {
     <main>
 
         {/* Hero-Section */}
-        <section aria-labelledby="hero-section">
+        <section className={styles.heroSection} aria-labelledby="hero-section">
             <figure>
                 <img src={heroImage} alt="Die Gründer von Specialty Coffee Duisburg in der Rösterei" />
                 <figcaption>Die Gründer von Specialty Coffee Duisburg in der Rösterei</figcaption>
@@ -28,7 +30,7 @@ const Home = ({viewport}) => {
         </section>
 
         {/* Cards-Section zur Darstellung der Services */}
-        <section aria-label="Übersicht unseres Service">
+        <section className={styles.cards} aria-label="Übersicht unseres Service">
             <Card src={cardIcon1} 
                     alt="Icon einer Kaffee-Tüte" 
                     title="Einzigartige Sorten">
@@ -53,7 +55,7 @@ const Home = ({viewport}) => {
         </section>
 
         {/* Section zur Präsentation des Kaffees */}
-        <section aria-labelledby="coffee-title">
+        <section className={styles.heroSection} aria-labelledby="coffee-title">
         <figure>
                 <img src={coffeeBeans} alt="Kaffeebohnen auf einem rustikalen Tisch vor Bokeh-Lichtern" />
                 <figcaption>Kaffeebohnen auf einem rustikalen Tisch vor Bokeh-Lichtern</figcaption>
@@ -65,15 +67,17 @@ const Home = ({viewport}) => {
         </section>
 
         {/* Featured-Blog-Post Section*/}
-        <section aria-labelledby="featured-blog-post">
+        <section className={styles.blogSection} aria-labelledby="featured-blog-post">
             <article>
-            <h2 id="featured-blog-post">Äthiopien: Ein Streifzug durch die Wiege des Kaffees</h2>
                 <figure>
                     <img src={featuredBlogPostImage} alt="Eine Landschaft einer Kaffee-Plantage in Äthiopien" />
                     <figcaption>Eine Landschaft einer Kaffee-Plantage in Äthiopien</figcaption>
                 </figure>
+                <div className={styles.articleContent}>
+                <h2 id="featured-blog-post">Äthiopien: Ein Streifzug durch die Wiege des Kaffees</h2>
                 <p>"Äthiopien gilt als die Wiege des Kaffees – hier, in den hochgelegenen Regionen des Horns von Afrika, hat die Pflanze ihren Ursprung. Schon die Legende vom Hirten Kaldi, dessen Ziegen nach dem Verzehr der Kaffeekirschen voller Energie tanzten, erzählt von der tiefen kulturellen Verbindung Äthiopiens mit dem Kaffee. Doch Äthiopien ist nicht nur eine Ursprungsregion, sondern auch eine Schatzkammer aromatischer Vielfalt...</p>
                 <Button text="Mehr dazu" link="#" aria="Lese unser letzter Blog-Artikel"/>
+                </div>
             </article>
         </section>
     </main>

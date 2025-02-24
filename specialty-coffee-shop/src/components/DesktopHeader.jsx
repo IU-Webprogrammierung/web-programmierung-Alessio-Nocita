@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import styles from "./DesktopHeader.module.sass";
 
 import logo from "../assets/images/logo_with_text.svg";
 
@@ -8,7 +9,7 @@ import logo from "../assets/images/logo_with_text.svg";
 
 const DesktopHeader = () => {
     return(
-        <header>
+        <header className={styles.head}>
             <Link to="/" aria-label="Gehe zur Homepage">
         <figure>
             <img src={logo} alt="Specialty Coffee Duisburg Logo" />

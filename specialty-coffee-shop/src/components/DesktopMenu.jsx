@@ -1,12 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+import styles from "./DesktopMenu.module.sass";
+
 // Navigationsmenü für Desktop-Ansicht
 // enthält Links zu den Hauptseiten der Website
 
 const DesktopMenu = () => {
     return(
-        <nav aria-label="Navigation-Menu">
+        <nav className={styles.navigationBar} aria-label="Navigation-Menu">
             <ul>
                 <li>
                     <NavLink to="/" aria-label="Gehe zur Homepage" exact>
