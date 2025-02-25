@@ -24,13 +24,15 @@ const Home = ({viewport}) => {
                 <figcaption>Die Gründer von Specialty Coffee Duisburg in der Rösterei</figcaption>
             </figure>
             <article>
-            <h1 id="hero-section">Einzigartigen Geschmack und Aromen</h1>
+            <h1 id="hero-section">Einzigartigen Geschmack <br />und Aromen</h1>
             <p>Bei Specialty Coffee Duisburg verbinden wir handverlesene Kaffeebohnen aus nachhaltigem Anbau mit unserer Leidenschaft für außergewöhnliche Aromen. Wir setzen auf direkte Partnerschaften mit Farmern, um Qualität, Transparenz und faire Bedingungen zu garantieren. Unsere sorgfältige Röstung bringt die individuellen Geschmacksprofile jeder Herkunft zur Geltung – von fruchtig-leicht bis schokoladig-intensiv. Genieße Kaffee, der nicht nur gut schmeckt, sondern auch Gutes bewirkt.</p>
             </article>
         </section>
 
         {/* Cards-Section zur Darstellung der Services */}
         <section className={styles.cards} aria-label="Übersicht unseres Service">
+            <h1>Unser Service</h1>
+            <article className={styles.cardsItems}>
             <Card src={cardIcon1} 
                     alt="Icon einer Kaffee-Tüte" 
                     title="Einzigartige Sorten">
@@ -52,6 +54,7 @@ const Home = ({viewport}) => {
                     title="Workshops & Events">
                         <p>Lerne die Kunst des perfekten Kaffees in unseren Barista-Kursen oder entdecke exklusive Coffee-Tastings. Werde selbst zum Experten!</p>
                     </Card>
+                    </article>
         </section>
 
         {/* Section zur Präsentation des Kaffees */}
@@ -61,23 +64,25 @@ const Home = ({viewport}) => {
                 <figcaption>Kaffeebohnen auf einem rustikalen Tisch vor Bokeh-Lichtern</figcaption>
             </figure>
             <article>
-            <h2 id="coffee-title">Unser Kaffee</h2>
+            <h1 id="coffee-title">Unser Kaffee</h1>
             <p>Unser Kaffee ist so vielfältig wie die Regionen, aus denen er stammt. Von den fruchtig-floralen Noten äthiopischer Bohnen über die schokoladige Tiefe brasilianischer Ernten bis hin zu den würzigen Akzenten indischer Spezialitäten und der lebendigen Süße aus Guatemala – wir kennen und lieben den Charakter jeder Herkunft. Durch unsere schonende Röstung und die Kunst, außergewöhnliche Blends zu kreieren, bringen wir das Beste aus jeder Bohne in deine Tasse. Das Ergebnis: Kaffee, der nicht nur schmeckt, sondern Geschichten erzählt – von den Feldern bis in deine Tasse.</p>
             </article>
         </section>
 
         {/* Featured-Blog-Post Section*/}
         <section className={styles.blogSection} aria-labelledby="featured-blog-post">
-            <article>
+            <h1>Letzter Blog-Post</h1>
+            <article className={styles.blogArticle}>
+            <div className={styles.articleContent}>
+                <h2 id="featured-blog-post">Äthiopien: Ein Streifzug durch die Wiege des Kaffees</h2>
+                <p>"Äthiopien gilt als die Wiege des Kaffees – hier, in den hochgelegenen Regionen des Horns von Afrika, hat die Pflanze ihren Ursprung. Schon die Legende vom Hirten Kaldi, dessen Ziegen nach dem Verzehr der Kaffeekirschen voller Energie tanzten, erzählt von der tiefen kulturellen Verbindung Äthiopiens mit dem Kaffee. Doch Äthiopien ist nicht nur eine Ursprungsregion, sondern auch eine Schatzkammer aromatischer Vielfalt...</p>
+                <Button className={styles.button} text="Mehr dazu" link="#" aria="Lese unser letzter Blog-Artikel"/>
+                </div>
                 <figure>
                     <img src={featuredBlogPostImage} alt="Eine Landschaft einer Kaffee-Plantage in Äthiopien" />
                     <figcaption>Eine Landschaft einer Kaffee-Plantage in Äthiopien</figcaption>
                 </figure>
-                <div className={styles.articleContent}>
-                <h2 id="featured-blog-post">Äthiopien: Ein Streifzug durch die Wiege des Kaffees</h2>
-                <p>"Äthiopien gilt als die Wiege des Kaffees – hier, in den hochgelegenen Regionen des Horns von Afrika, hat die Pflanze ihren Ursprung. Schon die Legende vom Hirten Kaldi, dessen Ziegen nach dem Verzehr der Kaffeekirschen voller Energie tanzten, erzählt von der tiefen kulturellen Verbindung Äthiopiens mit dem Kaffee. Doch Äthiopien ist nicht nur eine Ursprungsregion, sondern auch eine Schatzkammer aromatischer Vielfalt...</p>
-                <Button text="Mehr dazu" link="#" aria="Lese unser letzter Blog-Artikel"/>
-                </div>
+                
             </article>
         </section>
     </main>

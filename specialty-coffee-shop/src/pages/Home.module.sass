@@ -1,35 +1,78 @@
 .heroSection
     display: flex
-    justify-content: center
+    justify-content: space-between
     align-items: center
     background-color: #f0f0f0
     color: #333
     font-weight: 700
-    text-align: center
-    figure img
-        max-width: 600px
-        max-height: 600px
-
-.cards
-    max-width: 1200px
-    display: flex
-    justify-content: space-around
-    flex-wrap: wrap
-    margin: 40px auto
-
-.blogSection article 
-    margin-top: 40px
-    display: flex
-    justify-content: space-around
-    background-color: #f0f0f0
-    color: #333
-    font-weight: 700
-    text-align: center
-    .articleContent
+    max-height: 600px
+    overflow: hidden
+    width: 100vw
+    article
+        text-align: right
         display: flex
         flex-direction: column
-        justify-content: center
+        align-items: flex-end
+        padding: 0 80px 0 0
+        h1
+            margin-bottom: 20px
+        p
+            max-width: 600px
     figure img
-        max-width: 600px
-        max-height: 600px
+        width: 50vw
+        max-height: 1000px
+
+.cards
+    margin: 40px 0
+    display: flex
+    flex-direction: column
+    align-items: center
+    
+    .cardsItems
+        display: flex
+        width: 80vw
+        flex-direction: row
+        justify-content: space-around
+        flex-wrap: wrap
+        margin: 40px auto
+
+.blogSection 
+    display: flex
+    flex-direction: column
+    justify-content: center
+    background-color: white
+    width: 100vw
+    max-height: 800px
+    margin-bottom: 120px
+    h1
+        text-align: center
+        margin: 40px 0 20px
+    .blogArticle 
+        display: flex
+        justify-content: space-between
+        color: #333
+        background-color: #f0f0f0
+        font-weight: 700
+        text-align: center
+        h2
+            font-size: 1.7rem
+            text-align: left
+            max-width: 680px
+            margin-bottom: 20px
+        .articleContent
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: flex-start
+            padding: 20px 80px
+            text-align: left
+            p
+                max-width: 680px
+            .button
+                align-self: flex-start
+        figure img
+            width: 50vw
+            height: 100%
+
+
    

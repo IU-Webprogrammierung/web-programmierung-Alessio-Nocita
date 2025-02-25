@@ -10,7 +10,7 @@ const Card = ({src, alt, title, children}) => {
         <article className={styles.card} aria-label={alt}>
             <figure>
                 <img src={`${src}`} alt={`${alt}`}/>
-                <figcaption>
+                <figcaption className={styles.cardTitle}>
                     <h3>
                         {title}
                     </h3>

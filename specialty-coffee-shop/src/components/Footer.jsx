@@ -12,7 +12,7 @@ import instagram_logo from "../assets/images/instagram_logo.png";
 const Footer = () => {
     return(
         <footer className={styles.footer} aria-label="Footer">
-            <div>©2025 Alessio Nocita - Specialty Coffee Duisburg - Alle Rechte vorbehalten</div>
+            <div className={styles.copyright}>©2025 Alessio Nocita - Specialty Coffee Duisburg - Alle Rechte vorbehalten</div>
             <div className={styles.socialMediaIcons}>
             <figure>
                 <img className={styles.facebookLogo} src={facebook_logo} alt="Facebook Logo" />
@@ -21,7 +21,7 @@ const Footer = () => {
                 <img src={instagram_logo} alt="Instagram Logo" />
             </figure>
             </div>
-            <Link to="/impressum" aria-label="Gehe zum Impressum">Impressum</Link>
+            <Link className={styles.impressumLink} to="/impressum" aria-label="Gehe zum Impressum">Impressum</Link>
         </footer>
     )
 }
