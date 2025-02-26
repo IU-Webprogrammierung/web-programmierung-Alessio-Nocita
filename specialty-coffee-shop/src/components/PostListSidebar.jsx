@@ -1,9 +1,11 @@
 import React from "react";
+
+import styles from "./PostListSidebar.module.sass";
 import { Link } from "react-router-dom";
 
 const PostListSidebar = () => {
     return(
-        <aside aria-labelledby="aside-title">
+        <aside className={styles.sideBar} aria-labelledby="aside-title">
             <h2 id="aside-title">Artikelübersicht</h2>
             <ul>
                 <li>

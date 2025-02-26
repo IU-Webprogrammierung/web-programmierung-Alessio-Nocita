@@ -1,4 +1,6 @@
-import React from "react";
+import React from "react";4
+
+import styles from "./About.module.sass";
 
 import aboutUs from "../assets/images/about.png";
 
@@ -6,14 +8,15 @@ import aboutUs from "../assets/images/about.png";
 
 const About = () => {
     return (
-        <main>
+        <main className={styles.container}>
             <section aria-labelledby="title">
+            <h1 id="title">Über uns</h1>
                 <article>
-                    <h1 id="title">Über uns</h1>
-                    <figure>
+                    <figure className={styles.picture}>
                         <img src={aboutUs} alt="Die Inhaber in der Rösterei" />
                         <figcaption>Die Inhaber in der Rösterei</figcaption>
                     </figure>
+                    <div className={styles.textContent}>
                     <h2>Specialty Coffee: Guter Geschmack als Leidenschaft</h2>
                     <p>Willkommen bei unserer Rösterei, wo Kaffee mehr ist als nur ein Getränk – er ist eine Leidenschaft, ein Handwerk und eine Reise um die Welt in jeder Tasse. Wir glauben daran, dass herausragender Kaffee mit Sorgfalt, Wissen und Hingabe beginnt. Deshalb setzen wir auf nachhaltige Anbaumethoden, enge Beziehungen zu unseren Kaffeebauern und eine sorgfältige Handröstung, um das Beste aus jeder Bohne herauszuholen.
 Unsere Rösterei ist ein familiengeführtes Unternehmen, in dem Tradition und Innovation Hand in Hand gehen. Seit Generationen widmen wir uns der Kunst des Kaffeeröstens und freuen uns, unser Wissen und unsere Leidenschaft mit euch zu teilen.
@@ -22,6 +25,7 @@ In unserer Rösterei kannst du unseren Kaffee direkt vor Ort kaufen und dich von
 Unsere Leidenschaft für Kaffee teilen wir nicht nur in unserer Rösterei, sondern auch mit unserer Community. In unseren Workshops und Verkostungen bringen wir Menschen zusammen, um mehr über Kaffee zu lernen und neue Geschmackswelten zu entdecken. Denn für uns bedeutet Specialty Coffee mehr als nur Qualität – er steht für Transparenz, Nachhaltigkeit und die Liebe zum Detail.
 Tauche ein in die Welt des Kaffees und genieße mit uns jeden Schluck. Willkommen in unserer Rösterei!
 </p>
+</div>
                 </article>
             </section>
         </main>
