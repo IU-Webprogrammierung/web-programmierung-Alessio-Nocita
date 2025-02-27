@@ -76,7 +76,7 @@ const Home = ({viewport}) => {
             <div className={styles.articleContent}>
                 <h2 id="featured-blog-post">Äthiopien: Ein Streifzug durch die Wiege des Kaffees</h2>
                 <p>"Äthiopien gilt als die Wiege des Kaffees – hier, in den hochgelegenen Regionen des Horns von Afrika, hat die Pflanze ihren Ursprung. Schon die Legende vom Hirten Kaldi, dessen Ziegen nach dem Verzehr der Kaffeekirschen voller Energie tanzten, erzählt von der tiefen kulturellen Verbindung Äthiopiens mit dem Kaffee. Doch Äthiopien ist nicht nur eine Ursprungsregion, sondern auch eine Schatzkammer aromatischer Vielfalt...</p>
-                <Button className={styles.button} text="Mehr dazu" link="#" aria="Lese unser letzter Blog-Artikel"/>
+                <Button className={styles.button} text="Mehr dazu" link="/post/lastpost" aria="Lese unser letzter Blog-Artikel"/>
                 </div>
                 <figure>
                     <img src={featuredBlogPostImage} alt="Eine Landschaft einer Kaffee-Plantage in Äthiopien" />
