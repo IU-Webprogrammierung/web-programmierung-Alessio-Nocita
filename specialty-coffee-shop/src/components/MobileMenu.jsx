@@ -1,4 +1,7 @@
 import React from "react";
+import { useEffect } from "react";
+
+import styles from "./MobileMenu.module.sass";
 import { NavLink } from "react-router-dom";
 
 // Navigationsmenü für Mobile-Ansicht
@@ -6,32 +9,52 @@ import { NavLink } from "react-router-dom";
 // wird als Slider-Menü angezeigt
 // und wird durch anklicken des Burgermenü-Icons geöffnet
 
-const MobileMenu = () => {
+const MobileMenu = ({isOpen, toggler}) => {
+
+    const linkClickHandler = () => {
+        toggler();
+    }
+
+     useEffect(() => {
+        if (isOpen) {
+          document.body.style.position = "fixed";
+          document.body.style.top = `-${window.scrollY}px`;
+          document.body.style.width = "100vw";
+          document.body.style.height= "100vh";
+          document.body.style.overflow = "hidden";
+
+        } else {
+          document.body.style.position = ""; // Reset when closed
+          document.body.style.top = "";
+          document.body.style.overflow = "";
+        }
+      }, [isOpen]);
+
     return(
-        <nav aria-label="Navigation-Menu">
+        <nav className={isOpen ? styles.mobileMenu: styles.mobileMenuClosed} aria-label="Navigation-Menu">
             <ul>
                 <li>
-                    <NavLink to="/" aria-label="Gehe zur Homepage" exact>
+                    <NavLink onClick={linkClickHandler} to="/" aria-label="Gehe zur Homepage" exact>
                         Home
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink aria-label="Gehe zur 'Über uns'" to="/about">
+                    <NavLink onClick={linkClickHandler} aria-label="Gehe zur 'Über uns'" to="/about">
                         Über uns
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink aria-label="Gehe zu 'Unser Kaffee'" to="/coffee">
+                    <NavLink onClick={linkClickHandler} aria-label="Gehe zu 'Unser Kaffee'" to="/coffee">
                         Unser Kaffee
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink aria-label="Gehe zum Blog" to="/blog">
+                    <NavLink onClick={linkClickHandler} aria-label="Gehe zum Blog" to="/blog">
                         Blog
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink aria-label="Gehe zum Kontaktformular" to="/contact">
+                    <NavLink onClick={linkClickHandler} aria-label="Gehe zum Kontaktformular" to="/contact">
                         Kontakt
                     </NavLink>
                 </li>

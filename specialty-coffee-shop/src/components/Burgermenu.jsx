@@ -1,19 +1,20 @@
 import React, { useState } from "react";
 import styles from "./Burgermenu.module.sass";
 
+import { useEffect } from "react";
+
 // Quelle für animiertes Burger Icon: https://codepen.io/designcouch/pen/ExvwPY
 // (für React angepasst)
 
-const Burgermenu = () => {
-  const [isOpen, setIsOpen] = useState(false);
+const Burgermenu = ({mobileMenuOpen, toggler}) => {
 
   const toggleMenu = () => {
-    setIsOpen((prev) => !prev);
+   toggler();
   };
 
   return (
     <div
-      className={`${styles.navIcon} ${isOpen ? styles.open : ""}`}
+      className={`${styles.navIcon} ${mobileMenuOpen ? styles.open : ""}`}
       onClick={toggleMenu}
       aria-label="Gehe zur mobilen Navigation"
     >
@@ -26,3 +27,4 @@ const Burgermenu = () => {
 };
 
 export default Burgermenu;
+
