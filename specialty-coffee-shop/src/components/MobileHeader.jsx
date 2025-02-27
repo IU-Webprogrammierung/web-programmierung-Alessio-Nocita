@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import Burgermenu from "./Burgermenu";
-import logo from "../assets/images/logo_with_text.svg";
+import logo from "../assets/images/specialty_coffee_duisburg_logo.png";
 
 // Mobile-Header-Komponente
 // zeigt das Logo (mit Homepage verlinkt) und das Burgermenu als anclickbares Icon an
