@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import styles from "./Button.module.sass";
 
@@ -12,7 +11,7 @@ const Button = ({text, link, aria}) => {
 
     const handleClick = () => {
         navigate(link);
-        window.scrollTo(0, 0); // Scroll to top
+        window.scrollTo(0, 0); // Scrolle zum Seitenanfang
     };
 
     return(
