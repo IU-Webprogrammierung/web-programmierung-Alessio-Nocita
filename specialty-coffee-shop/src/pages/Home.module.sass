@@ -74,5 +74,49 @@
             width: 50vw
             height: 100%
 
+@media only screen and (max-width: 768px)
+    .heroSection
+        flex-direction: column
+        max-height: none
+        padding-bottom: 20px
+        article
+            text-align: center
+            padding: 0 20px
+            align-items: center
+            h1
+                margin: 20px
+            p
+                max-width: 300px
+                margin-bottom: 20px
+        figure img
+            width: 100vw
+            max-height: 240px
+            object-fit: cover
+    .cards
+        .cardsItems
+            width: 90vw
+            flex-direction: column
+            align-items: center
+    .blogSection
+        padding-bottom: 60px
+        max-height: none
+        h1
+            font-size: 2.8rem
+        .blogArticle
+            flex-direction: column-reverse
+            h2
+                text-align: center
+                max-width: 300px
+            .articleContent
+                padding: 20px
+                align-items: center
+                p
+                    max-width: 300px
+                .button
+                    align-self: center
+            figure img
+                width: 100vw
+                max-height: 500px
+
 
    

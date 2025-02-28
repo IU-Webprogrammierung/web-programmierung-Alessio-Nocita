@@ -24,7 +24,7 @@ const Root = ({viewport}) => {
     {viewport < 1080 ? <MobileHeader mobileMenuOpen={mobileMenuOpen} toggler={handleClick} /> : <DesktopHeader />}
     {viewport < 1080 ? <MobileMenu isOpen={mobileMenuOpen} toggler={handleClick} /> : <DesktopMenu />}
     <Outlet />
-    {!mobileMenuOpen && <Footer />}
+    <Footer viewport={viewport}/>
     </>
     );
     }
