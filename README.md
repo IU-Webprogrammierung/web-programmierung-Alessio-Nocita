@@ -23,7 +23,7 @@ Folgende Bereiche sind geplant:
 
 Die Seite wird vollständig responsiv und „mobile first“ aufgebaut.
 
-Geplante Breakpoints:
+Geplante Layouts:
 
 - 430px (Phone)
 - 768px (Tablet)
@@ -34,7 +34,29 @@ Die gesamte Seite wird über das JavaScript-Framework „React“ entwickelt. Al
 Preprozessor kommt SASS zum Einsatz. Auf gute HTML-Semantik und gute Accessibility laut WCAG 2.1 wird
 geachtet.
 
-Eine Ansicht der Website (passend zum aktuellen Stand) kann [hier](http://64.227.117.137/) aufgerufen werden.
+Um das Projekt zu **lokal zu installieren**, sind folgende Schritte nötig:
+
+1. Node.js installieren (Download [hier](https://nodejs.org/en))
+2. Git Projekt herunterladen: 
+```bash
+git clone https://github.com/IU-Webprogrammierung/web-programmierung-Alessio-Nocita.git
+```
+3. zum Projekt-Ordner wechseln: 
+```bash
+cd web-programmierung-Alessio-Nocita/specialty-coffee-shop
+```
+4. Dependencies installieren:
+```bash
+npm install
+```
+
+Das Projekt kann dann im Development Modus gestartet werden mit:
+```bash
+npm run dev
+```
+und im Browser dann unter [http://localhost:5173/](http://localhost:5173/) angeschaut werden.
+
+Dazu ist eine Online-Ansicht der Website (passend zum aktuellen Stand)  [hier](http://64.227.117.137/) verfügbar.
 
 ### 1. Konzeptionsphase
 In der **Konzeptionsphase** wird ausschließlich Semantik geschrieben, Content hochgeladen, und Accessibility gewährleistet. 
