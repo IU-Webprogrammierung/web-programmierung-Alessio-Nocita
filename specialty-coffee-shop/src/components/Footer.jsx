@@ -10,6 +10,11 @@ import instagram_logo from "../assets/images/instagram_logo.png";
 // zeigt eine Copyright-Angabe, das Impressum und Social Media-Links an
 
 const Footer = ({viewport}) => {
+
+    const handleClick = () => {
+        window.scrollTo(0, 0);
+    }
+
     return(
         <footer className={styles.footer} aria-label="Footer">
             {viewport > 768 && <div className={styles.copyright}>©2025 Alessio Nocita - Specialty Coffee Duisburg</div>}
@@ -21,7 +26,7 @@ const Footer = ({viewport}) => {
                 <img src={instagram_logo} alt="Instagram Logo" />
             </figure>
             </div>
-            <Link className={styles.impressumLink} to="/impressum" aria-label="Gehe zum Impressum">Impressum</Link>
+            <Link className={styles.impressumLink} to="/impressum" aria-label="Gehe zum Impressum" onClick={handleClick}>Impressum</Link>
         </footer>
     )
 }
