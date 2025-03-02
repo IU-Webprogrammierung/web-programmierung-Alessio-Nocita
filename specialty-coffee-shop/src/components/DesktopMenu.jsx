@@ -11,27 +11,37 @@ const DesktopMenu = () => {
         <nav className={styles.navigationBar} aria-label="Navigation-Menu">
             <ul>
                 <li>
-                    <NavLink to="/" aria-label="Gehe zur Homepage" exact>
+                    <NavLink to="/" 
+                    className={({isActive}) => isActive ? styles.active : styles.inactive}
+                    aria-label="Gehe zur Homepage" exact>
                         Home
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink aria-label="Gehe zur 'Über uns'" to="/about">
+                    <NavLink 
+                    className={({isActive}) => isActive ? styles.active : styles.inactive}
+                    aria-label="Gehe zur 'Über uns'" to="/about">
                         Über uns
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink aria-label="Gehe zu 'Unser Kaffee'" to="/coffee">
+                    <NavLink 
+                    className={({isActive}) => isActive ? styles.active : styles.inactive}
+                    aria-label="Gehe zu 'Unser Kaffee'" to="/coffee">
                         Unser Kaffee
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink aria-label="Gehe zum Blog" to="/blog">
+                    <NavLink 
+                    className={({isActive}) => isActive ? styles.active : styles.inactive}
+                    aria-label="Gehe zum Blog" to="/blog">
                         Blog
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink aria-label="Gehe zum Kontaktformular" to="/contact">
+                    <NavLink 
+                    className={({isActive}) => isActive ? styles.active : styles.inactive}
+                    aria-label="Gehe zum Kontaktformular" to="/contact">
                         Kontakt
                     </NavLink>
                 </li>
