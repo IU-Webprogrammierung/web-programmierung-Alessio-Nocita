@@ -13,11 +13,13 @@ const Impressum = () => {
                 <article className={styles.impressumContent}>
                     <h1 id="impressum-title">Impressum</h1>
                     <h2>Angaben gemäß § 5 TMG</h2>
+                    <address>
                     <p>Max Mustermann</p>
                     <p>Musterstraße 123</p>
                     <p>12345 Musterstadt</p>
                     <p>Telefon: 01234 567890</p>
                     <p>E-Mail:max_mustermann@gmail.com</p>
+                    </address>
                     <h2>Haftung für Inhalte</h2>
                     <p>Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p>
                     <h2>Haftung für Links</h2>
@@ -30,9 +32,9 @@ const Impressum = () => {
                     <p>Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.</p>
                     </article>
                     <Button text="Zurück zu Home" link="/" aria="Zurück zu Home"/>
-                    </section>
-                    </main>
-                    );
-                    }
+                </section>
+            </main>
+        );
+    }
 
 export default Impressum;

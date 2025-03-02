@@ -1,7 +1,6 @@
 .container 
     margin: 0 auto
     max-width: 1400px
-
     section
         display: flex
         flex-direction: column
@@ -9,18 +8,41 @@
         h1
             font-size: 3rem
             margin-bottom: 40px
-
         article
             display: flex
             align-items: flex-start
             gap: 20px
-            
             figure img
                 max-width: 40vw
                 flex-shrink: 0
                 margin: 0 20px 10px 0
-
             div.textContent
                 flex: 1
                 max-width: calc(100% - 320px)
                 margin-bottom: 120px
+
+@media only screen and (max-width: 768px)
+    .container
+        section
+            article
+                flex-direction: column
+                align-items: center
+                gap: 0
+                margin: 0 0 40px
+                max-width: 100vw
+                width: 100vw
+                h2
+                    font-size: 1.5rem
+                    margin-bottom: 20px
+                    text-align: center
+                figure img
+                    max-width: 100vw
+                    width: 100vw
+                    object-fit: cover
+                    object-position: 50% 30%
+                    max-height: 30vh
+                    margin: 0 0 20px
+                    padding: 0
+                div.textContent
+                    max-width: 80vw
+                    margin-bottom: 40px

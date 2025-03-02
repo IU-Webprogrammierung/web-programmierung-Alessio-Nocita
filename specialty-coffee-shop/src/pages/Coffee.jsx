@@ -42,7 +42,7 @@ const Coffee = () => {
                 </figure>
                 <h3 className={styles.coffeeTitle}>Guatemala</h3>
                 <h4 className={styles.coffeeSubtitle}>Fruchtig und komplexer Kaffee</h4>
-                <p>Dieser Hochlandkaffee aus Guatemala verführt mit lebendigen Aromen von roten Beeren, feiner Zitrussäure und einem Hauch von Kakao. Die ausgewogene Balance zwischen Süße und Säure macht ihn zu einem exzellenten Genuss für Pour-Over, French Press oder als aromatischen Filterkaffee.</p>
+                <p className={styles.coffeeText}>Dieser Hochlandkaffee aus Guatemala verführt mit lebendigen Aromen von roten Beeren, feiner Zitrussäure und einem Hauch von Kakao. Die ausgewogene Balance zwischen Süße und Säure macht ihn zu einem exzellenten Genuss für Pour-Over, French Press oder als aromatischen Filterkaffee.</p>
             </article>
         </section>
     </main>);

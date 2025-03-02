@@ -3,6 +3,7 @@ import React from "react";
 import styles from "./Post.module.sass";
 
 import blogPost from "../assets/images/ethiopia_coffee_plantages.png";
+import Button from "../components/Button";
 
 // Single Blog Post-Seite
 // enthält Titel, Autor, Veröffentlichungsdatum, Text und Bild
@@ -46,8 +47,8 @@ const Post = () => {
 <p>Die Bedeutung Äthiopiens für den globalen Kaffeemarkt ist enorm. Das Land zählt nicht nur zu den größten Produzenten, sondern auch zu den Pionieren der Specialty-Coffee-Bewegung. Viele der weltbesten Kaffees stammen aus Äthiopien, und seine Bauern tragen mit traditionellen Anbaumethoden und nachhaltiger Bewirtschaftung zur Erhaltung der ursprünglichen Kaffeegenetik bei.</p>
 
 <p>Für Kaffeeliebhaber ist äthiopischer Kaffee eine Reise durch die Geschichte und die Aromen des Ursprungslandes des Kaffees. Egal, ob als Filterkaffee, in der French Press oder als milder Espresso – äthiopischer Kaffee bietet eine faszinierende Geschmackstiefe, die man probiert haben muss.</p>
-            
-            </div>
+             </div>
+            <Button text="Zurück" link="/blog" aria="Zurück zu Blog"/>
             </article>
         </section>
     </main>

@@ -1,40 +1,76 @@
-.postArticle
-    display: grid
-    width: 70vw
-    margin: 0 auto 120px    
-    grid-template-rows: 80px 40px 60px minmax(200px, 700px) 1fr
-    color: #333
-    background-color: #f0f0f0
-    h1
-        grid-row: 1 / 2
-        margin: 40px 0 0
-        font-size: 2.5rem
-        text-align: center
-    time
-        grid-row: 2 / 3
-        font-size: 1.2rem
-        text-align: center
-        margin-top: 6px
-    h2
-        grid-row: 3 / 4
-        text-align: center
-        margin-bottom: 20px
-    address
-        display: inline
-    .articlePicture
-        grid-row: 4 / 5
-        justify-self: center
-        align-self: flex-start
-        margin: 0 auto
-        width: 50vw
-        img
-            max-width: 50vw
-            object-fit: cover
-            object-position: center
-    .postContent
-        grid-row: 5 / 6
-        padding: 20px 80px
-        text-align: left
-        align-self: flex-start
-        ul
-            list-style: none
+main
+    padding-bottom: 40px
+    .postSection
+        .postArticle
+            width: 70%
+            display: grid
+            margin: 0 auto 120px  
+            grid-template-rows: 132px 40px 60px minmax(200px, 400px) 1fr 40px
+            color: #333
+            background-color: #f0f0f0
+            h1
+                width: 70%
+                grid-row: 1 / 2
+                margin: 40px auto 0
+                font-size: 2.5rem
+                text-align: center     
+            time
+                grid-row: 2 / 3
+                font-size: 1.2rem
+                text-align: center
+                margin-top: 6px
+            h2
+                grid-row: 3 / 4
+                text-align: center
+                margin-bottom: 20px
+            address
+                display: inline
+            button
+                grid-row: 6 / 7
+                margin: 40px 5vw
+            .articlePicture
+                grid-row: 4 / 5
+                img
+                    width: 100%
+                    height: 400px
+                    object-fit: cover
+                    object-position: center
+            .postContent
+                grid-row: 5 / 6
+                padding: 20px 0
+                width: 70%
+                text-align: left
+                margin: 20px auto 40px
+                ul
+                    list-style: none
+
+@media only screen and (max-width: 768px)
+    main
+        padding-bottom: 0
+        .postSection
+            .postArticle
+                width: 100vw
+                grid-template-rows: 100px 32px 40px 240px 1fr 40px
+                margin: 0
+                justify-items: center
+                h1
+                    font-size: 1.5rem
+                    margin: 20px 0 0
+                time
+                    font-size: 1rem
+                    margin-top: 4px
+                h2
+                    font-size: 1rem
+                button
+                    margin: 40px 10vw
+                .articlePicture
+                    height: 200px
+                    img
+                        max-width: 90vw
+                .postContent
+                    padding: 12px 20px 40px
+                    ul
+                        list-style: none
+                        padding: 0
+                        li
+                            margin-bottom: 20px
