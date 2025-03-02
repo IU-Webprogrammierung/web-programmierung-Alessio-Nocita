@@ -27,8 +27,7 @@
     margin: 40px 0
     display: flex
     flex-direction: column
-    align-items: center
-    
+    align-items: center 
     .cardsItems
         display: flex
         width: 80vw
@@ -76,6 +75,61 @@
             width: 50vw
             height: 100%
 
+@media only screen and (max-width: 1440px)
+    .cards
+        .cardsItems
+            width: 90vw
+            display: grid
+            grid-template-columns: 1fr 1fr
+            grid-template-row: 1fr 1fr
+            justify-items: center
+
+@media only screen and (max-width: 1080px)
+    .heroSection
+        flex-direction: column
+        max-height: none
+        padding-bottom: 20px
+        article
+            text-align: center
+            padding: 0 20px
+            align-items: center
+            h1
+                margin: 20px
+            p
+                max-width: 80vw
+                margin-bottom: 20px
+        figure img
+            width: 100vw
+            max-height: 400px
+            object-fit: cover
+            object-position: 50% 30%
+    .cards
+        .cardsItems
+            width: 90vw
+            display: grid
+            grid-template-columns: 1fr 1fr
+            grid-template-row: 1fr 1fr
+            justify-items: center
+    .blogSection
+        max-height: none
+        h1
+            font-size: 2rem
+        .blogArticle
+            flex-direction: column-reverse
+            h2
+                text-align: center
+                max-width: 300px
+            .articleContent
+                padding: 20px
+                align-items: center
+                p
+                    max-width: 80vw
+                .button
+                    align-self: center
+            figure img
+                width: 100vw
+                max-height: 500px
+
 @media only screen and (max-width: 768px)
     .heroSection
         flex-direction: column
@@ -95,7 +149,11 @@
             max-height: 240px
             object-fit: cover
     .cards
+        h1
+            font-size: 2.5rem
         .cardsItems
+            display: flex
+            flex-direction: column
             width: 90vw
             flex-direction: column
             align-items: center

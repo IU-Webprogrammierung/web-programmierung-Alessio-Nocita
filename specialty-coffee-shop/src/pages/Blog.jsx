@@ -88,7 +88,7 @@ const Blog = ({viewport}) => {
             {/* Sidebar mit Links zu den Blog-Artikeln
             (wird nur bei der Desktop-Ansicht angezeigt) */}
             
-            {viewport > 1024 && <PostListSidebar className={styles.blogAside}/>}
+            {viewport > 1080 && <PostListSidebar className={styles.blogAside}/>}
 
         </main>
     );

@@ -16,7 +16,6 @@ import cardIcon4 from "../assets/images/calendar.svg"
 const Home = ({viewport}) => {
     return (
     <main>
-
         {/* Hero-Section */}
         <section className={styles.heroSection} aria-labelledby="hero-section">
             <figure>
@@ -38,18 +37,18 @@ const Home = ({viewport}) => {
                     title="Einzigartige Sorten">
                         <p>Wir wählen nur die besten Bohnen aus nachhaltigem Anbau, um dir ein unvergleichliches Geschmackserlebnis zu bieten – von exotischen Fruchtnoten bis zu nussigen Nuancen.</p>
                     </Card>
-                    <Card src={cardIcon2} 
+            <Card src={cardIcon2} 
                     alt="Icon eines Handschlags" 
                     title="Fair Trade">
                         <p>Wir setzen auf direkte Partnerschaften mit Kaffeebauern weltweit, um faire Preise und Bedingungen zu garantieren. Gemeinsam für eine nachhaltige Zukunft
 </p>
                     </Card>
-                    <Card src={cardIcon3}
+            <Card src={cardIcon3}
                     alt="Icon einer Kaffeemaschine"
                     title="Genuss hier vor Ort">
                         <p>Erlebe unsere Kaffeespezialitäten direkt in unserer gemütlichen Bar in Duisburg. Frisch aufgebrüht, mit Liebe zubereitet – der perfekte Ort für echte Kaffeegenießer.</p>
                     </Card>
-                    <Card src={cardIcon4}
+            <Card src={cardIcon4}
                     alt="Icon eines Kalenders"
                     title="Workshops & Events">
                         <p>Lerne die Kunst des perfekten Kaffees in unseren Barista-Kursen oder entdecke exklusive Coffee-Tastings. Werde selbst zum Experten!</p>
