@@ -14,7 +14,7 @@ const Coffee = () => {
     return (
     <main>
         <section className={styles.coffeeList} aria-labelledby="coffee-title">
-            <h1 id="coffee-title">Unsere Kaffee</h1>
+            <h1 id="coffee-title">Unser Kaffee</h1>
             <h2>Beste ausgesuchte, qualitative Single Origins</h2>
 
             <article className={styles.coffeeArticle}>
