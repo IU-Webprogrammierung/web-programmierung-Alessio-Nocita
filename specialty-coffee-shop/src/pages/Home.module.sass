@@ -1,13 +1,19 @@
+@use "../styles/variables.sass" as *
+
+@mixin flex-column-center
+  display: flex
+  flex-direction: column
+  align-items: center
+  
 .heroSection
     display: flex
     justify-content: space-between
     align-items: center
-    background-color: #f0f0f0
-    color: #333
-    font-weight: 700
+    background-color: $box-primary-color
+    color: $text-color
+    font-weight: $font-weight-bold
     max-height: 600px
     overflow: hidden
-    width: 100vw
     article
         text-align: right
         display: flex
@@ -18,16 +24,13 @@
             margin-bottom: 20px
         p
             max-width: 600px
-            font-weight: 400
+            font-weight: $font-weight-normal
     figure img
         width: 50vw
-        max-height: 1000px
 
 .cards
+    @include flex-column-center
     margin: 40px 0
-    display: flex
-    flex-direction: column
-    align-items: center 
     .cardsItems
         display: flex
         width: 80vw
@@ -37,38 +40,35 @@
         margin: 40px auto
 
 .blogSection 
-    display: flex
-    flex-direction: column
-    justify-content: center
+    @include flex-column-center
     background-color: white
-    width: 100vw
     max-height: 800px
     margin-bottom: 120px
+
     h1
         text-align: center
         margin: 40px 0 20px
     .blogArticle 
         display: flex
         justify-content: space-between
-        color: #333
-        background-color: #f0f0f0
-        font-weight: 700
+        color: $text-color
+        background-color: $box-primary-color
+        font-weight: $font-weight-bold
         text-align: center
+        width: 100%
         h2
             font-size: 1.7rem
             text-align: left
             max-width: 680px
             margin-bottom: 20px
         .articleContent
-            display: flex
-            flex-direction: column
+            @include flex-column-center
             justify-content: center
-            align-items: flex-start
             padding: 20px 80px
             text-align: left
             p
                 max-width: 680px
-                font-weight: 400
+                font-weight: $font-weight-normal
             .button
                 align-self: flex-start
         figure img
@@ -111,7 +111,6 @@
             grid-template-row: 1fr 1fr
             justify-items: center
     .blogSection
-        max-height: none
         h1
             font-size: 2rem
         .blogArticle
@@ -131,7 +130,6 @@
 @media only screen and (max-width: 768px)
     .heroSection
         flex-direction: column
-        max-height: none
         padding-bottom: 20px
         article
             text-align: center
@@ -178,10 +176,8 @@
 @media only screen and (max-width: 480px)
     .cards .cardsItems
         width: 90vw
-        display: flex
-        flex-direction: column
+        @include flex-column-center
         justify-content: flex-start
-        align-items: center
 
 
-   
+    
