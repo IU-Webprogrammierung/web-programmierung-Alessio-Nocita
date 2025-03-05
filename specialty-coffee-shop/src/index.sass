@@ -1,7 +1,9 @@
+@use "./styles/variables.sass" as *
+  
 :root 
   font-family: "futura-pt", system-ui, Avenir, Helvetica, Arial, sans-serif
   line-height: 1.5
-  font-weight: 400
+  font-weight: $font-weight-normal
 
   font-synthesis: none
   text-rendering: optimizeLegibility
@@ -13,11 +15,11 @@ h1, h2, h3, h4, h5, h6
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif
   
 h1
-  font-size: 3.2em
+  font-size: $font-size-huge
   line-height: 1.1
 
 p, li, label, input, textarea
-  font-size: 1.2em
+  font-size: $font-size-small
   line-height: 1.3
 
 figcaption

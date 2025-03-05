@@ -1,9 +1,11 @@
+@use "../styles/variables.sass" as *
+    
 .blogPage
     display: grid
     grid-template-columns: 60vw 40vw
     grid-template-rows: 80px 1fr
     h1
-        font-size: 3rem
+        font-size: $font-size-huge
         text-align: center
         margin-bottom: 40px
         grid-row: 1 / 2
@@ -18,7 +20,7 @@
         grid-row: 2 / 3
         grid-column: 1 / 2
         .blogArticle:nth-of-type(odd)
-            background-color: #616b3a
+            background-color: $box-secondary-color
             color: white
         .blogArticle:nth-of-type(even)
             background-color: #e0e0e0
@@ -30,8 +32,8 @@
             text-align: center
             max-height: 600px
             h3
-                font-size: 1.3rem
-                font-weight: 700
+                font-size: $font-size-small
+                font-weight: $font-weight-bold
                 text-align: left
                 max-width: 680px
                 margin-bottom: 20px
@@ -44,7 +46,7 @@
                 text-align: left
                 p
                     max-width: 720px
-                    font-weight: 400
+                    font-weight: $font-weight-normal
                 .button
                     align-self: flex-start
             figure img
@@ -62,7 +64,7 @@
         display: flex
         flex-direction: column
         h1
-            font-size: 2rem
+            font-size: $font-size-large
             margin-bottom: 20px
         .blogSection 
             width: 100vw
@@ -75,7 +77,7 @@
                 align-items: center
                 max-height: none
                 h3
-                    font-size: 1.5rem
+                    font-size: $font-size-medium
                     margin-bottom: 20px
                     text-align: center
                 .articleContent

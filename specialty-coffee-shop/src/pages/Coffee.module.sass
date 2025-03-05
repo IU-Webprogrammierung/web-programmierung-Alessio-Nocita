@@ -1,8 +1,10 @@
+@use "../styles/variables.sass" as *
+
 .coffeeList
     max-width: 80vw
     margin: 0 auto 120px
     h1
-        font-size: 3rem
+        font-size: $font-size-huge
     h1, h2
         text-align: center
     .coffeeArticle
@@ -22,19 +24,19 @@
             grid-column: 2 / 3
         .coffeeTitle
             grid-row: 1 / 2
-            font-size: 2rem
+            font-size: $font-size-large
         .coffeeSubtitle
             grid-row: 2 / 3
-            font-size: 1.5rem
+            font-size: $font-size-medium
         .coffeeText
             grid-row: 3 / 4
 
 @media only screen and (max-width: 1080px)
     .coffeeList
         h1
-            font-size: 2.5rem
+            font-size: $font-size-large
         h2
-            font-size: 1.8rem
+            font-size: $font-size-medium
         .coffeeArticle 
             grid-template-rows: 24px 48px 1fr
             .coffeePicture img
@@ -45,9 +47,9 @@
         max-width: 100vw
         margin: 0
         h1
-            font-size: 2rem
+            font-size: $font-size-large
         h2
-            font-size: 1.5rem
+            font-size: $font-size-medium
             margin-bottom: 20px
             padding: 0 12px
         .coffeeArticle
@@ -58,10 +60,10 @@
             min-height: 330px
             margin: 0
             &:nth-of-type(odd)
-                background-color:#616b3a
+                background-color:$box-secondary-color
                 color: white
             &:nth-of-type(even)
-                background-color:#f0f0f0
+                background-color:$box-primary-color
             &:nth-of-type(2) .coffeePicture img
                 object-position: 30% 50%
             .coffeePicture
@@ -78,13 +80,13 @@
                 padding: 0 12px
             .coffeeTitle
                 grid-row: 1 / 2
-                font-size: 1.2rem
+                font-size: $font-size-small
                 padding: 10px 12px
             .coffeeSubtitle
                 grid-row: 2 / 3
-                font-size: 1rem
+                font-size: $font-size-tiny
             .coffeeText
-                font-size: 1rem
+                font-size: $font-size-tiny
                 grid-row: 3 / 4
                 padding-bottom: 10px
                 

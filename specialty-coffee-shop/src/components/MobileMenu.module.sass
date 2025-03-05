@@ -1,10 +1,12 @@
+@use "../styles/variables.sass" as *
+    
 .mobileMenu
     position: fixed
     top: 0
     left: 0
     width: 100vw
     height: 100vh
-    background-color: #333
+    background-color: $text-color
     z-index: 500
     display: flex
     flex-direction: column
@@ -23,14 +25,14 @@
         li
             justify-self: center
             align-self: center
-            font-size: 2rem
+            font-size: $font-size-large
             text-align: center
             cursor: pointer
             a
-                color: #f0f0f0
+                color: $box-primary-color
                 text-decoration: none
                 &:hover
-                    color: #333
+                    color: $text-color
                     text-decoration: underline
 
 .mobileMenuClosed
@@ -39,7 +41,7 @@
     left: -100vw
     width: 100vw
     height: 100vh
-    background-color: #333
+    background-color: $text-color
     z-index: 500
     display: flex
     flex-direction: column

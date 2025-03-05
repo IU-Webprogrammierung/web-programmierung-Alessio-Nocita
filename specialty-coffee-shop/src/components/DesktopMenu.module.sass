@@ -1,3 +1,5 @@
+@use "../styles/variables.sass" as *
+    
 .navigationBar 
     ul
         margin: 40px auto
@@ -9,21 +11,21 @@
             a
                 text-decoration: none
                 color: #000
-                font-size: 1.5rem
-                font-weight: 700
+                font-size: $font-size-medium
+                font-weight: $font-weight-bold
                 &:hover
                     color: #f00
                 &:focus
                     color: #000
             a.active
-                color: #616b3a
+                color: $box-secondary-color
                 text-decoration: underline
-                font-size: 1.5rem
+                font-size: $font-size-medium
                 font-weight: 600
                 &:hover
                     color: #f00
                 &:focus
-                    color: #616b3a
+                    color: $box-secondary-color
 
 @media only screen and (max-width: 1080px)
     .navigationBar 
@@ -31,9 +33,9 @@
             width: 70vw
             li a, 
             li a.active, 
-            li a:hover, 
+            li a:hover,
             li a:focus
-                font-size: 1.2rem
+                font-size: $font-size-small
 
 
     

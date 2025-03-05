@@ -15,7 +15,7 @@ const DesktopHeader = () => {
                 <img src={logo} alt="Specialty Coffee Duisburg Logo" />
             </figure>
             </Link>
-    </header>
+        </header>
     )
 }
 
