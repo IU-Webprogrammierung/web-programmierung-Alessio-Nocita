@@ -1,17 +1,20 @@
 @use "../styles/variables.sass" as *
-    
+
+@mixin flex-column-center
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
 .mobileMenu
     position: fixed
+    @include flex-column-center
     top: 0
     left: 0
     width: 100vw
     height: 100vh
     background-color: $text-color
     z-index: 500
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
     transition: left 0.5s
     ul
         list-style-type: none
@@ -37,14 +40,11 @@
 
 .mobileMenuClosed
     position: fixed
+    @include flex-column-center
     top: 0
     left: -100vw
     width: 100vw
     height: 100vh
     background-color: $text-color
     z-index: 500
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
     transition: left 0.5s

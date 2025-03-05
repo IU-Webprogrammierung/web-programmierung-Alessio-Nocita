@@ -28,7 +28,7 @@ const Blog = ({viewport}) => {
                         <figcaption>Kaffee-Plantage in Äthiopien</figcaption>
                     </figure>
                     <div className={styles.articleContent}>
-                        <h3>Äthiopien: Ein Streifzug durch die Wiege des Kaffees</h3>
+                        <h3>Äthiopien: Wiege des Kaffees</h3>
                         <p>Äthiopien gilt als die Wiege des Kaffees – hier, in den hochgelegenen Regionen des Horns von Afrika, hat die Pflanze ihren Ursprung. Schon die Legende vom Hirten Kaldi, dessen Ziegen nach dem Verzehr der Kaffeekirschen voller Energie tanzten, erzählt von der tiefen kulturellen Verbindung Äthiopiens mit dem Kaffee. Doch Äthiopien ist nicht nur eine Ursprungsregion, sondern auch eine Schatzkammer aromatischer Vielfalt...</p>
                         <Button text="Mehr lesen" link="/post/ethiopia" aria="Erfahre mehr über den Kaffee-Land Äthiopien" color="white"/>
 
@@ -42,7 +42,7 @@ const Blog = ({viewport}) => {
                     <figcaption>Den perfekte Espresso zubereiten</figcaption>
             </figure>
             <div className={styles.articleContent}>
-                    <h3>Der perfekte Espresso: Tipps und Tricks für zu Hause</h3>
+                    <h3>Der perfekte Espresso: Tipps und Tricks</h3>
                     <p>Espresso ist die Königsdisziplin der Kaffeezubereitung – und mit ein paar einfachen Tricks kannst du auch zu Hause ein perfektes Ergebnis erzielen. Wir zeigen dir, wie du deinen Espresso optimal extrahierst, welcher Mahlgrad der richtige ist und worauf du bei der Wahl der Bohnen achten solltest. Mit unseren Tipps und etwas Übung gelingt dir bald ein Espresso wie vom Profi...</p>
                     <Button text="Mehr lesen" link="/post/espresso" aria="Erfahre mehr darüber, wie man den perfekten Espresso zubereitet"/>
 

@@ -15,7 +15,7 @@ const Post = () => {
     <main>
         <section className={styles.postSection}>
             <article className={styles.postArticle}>
-                <h1>Äthiopien: Ein Streifzug durch die Wiege des Kaffees</h1>
+                <h1>Äthiopien: Wiege des Kaffees</h1>
                 <time datetime="2021-09-15">15. September 2021</time>
                 <h2>Ein Artikel von <address>Max Mustermann</address></h2>
 

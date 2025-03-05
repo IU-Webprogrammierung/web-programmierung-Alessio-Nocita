@@ -3,7 +3,7 @@
 .footer
     background-color: $text-color
     display: grid
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+    grid-template-columns: repeat(5, 1fr)
     color: white
     text-align: center
     padding: 20px 80px 10px
@@ -24,6 +24,7 @@
         place-self: center
         figure img.facebookLogo 
                 transform: translateY(-2px)
+                cursor: pointer
     .impressumLink
         grid-column: 5 / 5
         color: white

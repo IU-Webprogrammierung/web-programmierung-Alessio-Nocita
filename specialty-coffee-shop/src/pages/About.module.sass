@@ -1,19 +1,26 @@
 @use "../styles/variables.sass" as *
-    
+
+@mixin flex-column-center
+    display: flex
+    flex-direction: column
+    align-items: center
+
+@mixin flex-row($gap: 20px)
+    display: flex
+    flex-direction: row
+    align-items: flex-start
+    gap: $gap
+
 .container 
     margin: 0 auto
     max-width: 1400px
     section
-        display: flex
-        flex-direction: column
-        align-items: center
+        @include flex-column-center
         h1
             font-size: 3rem
             margin-bottom: 40px
         article
-            display: flex
-            align-items: flex-start
-            gap: 20px
+            @include flex-row
             figure img
                 max-width: 40vw
                 flex-shrink: 0
@@ -28,8 +35,7 @@
     .container
         section
             article
-                flex-direction: column
-                align-items: center
+                @include flex-column-center
                 gap: 0
                 margin: 0 0 40px
                 max-width: 100vw

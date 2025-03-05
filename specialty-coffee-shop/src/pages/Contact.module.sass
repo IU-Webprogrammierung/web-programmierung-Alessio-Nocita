@@ -1,17 +1,27 @@
 @use "../styles/variables.sass" as *
     
+@mixin flex-column-center
+    display: flex
+    flex-direction: column
+    align-items: center
+
+@mixin field-styles
+    width: 25vw
+    margin: 10px 0
+    padding: 10px
+    border-radius: 5px
+    border: 1px solid $text-color
+
 h1.title
     font-size: $font-size-large
     margin: 60px 0 20px
     text-align: center
 
 .formular
+    @include flex-column-center
+    justify-content: flex-start
     width: 30vw
     margin: 0 auto 120px
-    display: flex
-    flex-direction: column
-    justify-content: flex-start
-    align-items: center
     border: 1px solid $text-color
     border-radius: 10px
     padding: 20px
@@ -20,18 +30,8 @@ h1.title
     label
         width: 26vw
         text-align: left
-    input
-        width: 25vw
-        margin: 10px 0
-        padding: 10px
-        border-radius: 5px
-        border: 1px solid $text-color
-    textarea
-        width: 25vw
-        margin: 10px 0
-        padding: 10px
-        border-radius: 5px
-        border: 1px solid $text-color  
+    input, textarea
+        @include field-styles
 
 @media only screen and (max-width: 768px)
     h1.title
@@ -41,9 +41,5 @@ h1.title
         width: 70vw
         padding: 20px
         margin: 0 auto 40px
-        label
-            width: 60vw
-        input
-            width: 60vw
-        textarea
+        label, input, textarea
             width: 60vw
