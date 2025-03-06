@@ -1,16 +1,17 @@
 module.exports = {
-  purge: [],
-  darkMode: false,
+  // purge: [],
+  // darkMode: false,
   content: [
-    "./src/**/*.{html,js,jsx,ts,tsx,scss,sass}",
-    "./components/**/*.{js,jsx,ts,tsx}",
-    "./pages/**/*.{js,jsx,ts,tsx}",
+    "./index.html",
+    "./src/**/*.{html,js,jsx,ts,tsx}",
+    "./src/components/**/*.{js,jsx,ts,tsx}",
+    "./src/pages/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {},
   },
-  variants: {
-    extend: {},
-  },
+  // variants: {
+  //   extend: {},
+  // },
   plugins: [],
 }
