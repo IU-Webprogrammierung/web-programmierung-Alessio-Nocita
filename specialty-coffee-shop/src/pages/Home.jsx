@@ -17,13 +17,15 @@ const Home = ({viewport}) => {
     return (
     <main>
         {/* Hero-Section */}
-        <section className={`hero-section ${styles.heroSection}`} aria-labelledby="hero-section">
+        <section className={
+                            `hero-section ${styles.heroSection}
+                            md:flex-col`} aria-labelledby="hero-section">
             <figure className="w-[50vw] h-full flex">
                 <img className="w-full h-full object-cover" src={heroImage} alt="Die Gründer von Specialty Coffee Duisburg in der Rösterei" />
                 <figcaption>Die Gründer von Specialty Coffee Duisburg in der Rösterei</figcaption>
             </figure>
-            <article className="hero-article">
-            <h1 className="m-20" id="hero-section">Einzigartigen Geschmack <br />und Aromen</h1>
+            <article className="hero-article w-[50vw]">
+            <h1 className="mt-20 mr-16" id="hero-section">Einzigartigen Geschmack <br />und Aromen</h1>
             <p className="font-normal p-16">Bei Specialty Coffee Duisburg verbinden wir handverlesene Kaffeebohnen aus nachhaltigem Anbau mit unserer Leidenschaft für außergewöhnliche Aromen. Wir setzen auf direkte Partnerschaften mit Farmern, um Qualität, Transparenz und faire Bedingungen zu garantieren. Unsere sorgfältige Röstung bringt die individuellen Geschmacksprofile jeder Herkunft zur Geltung – von fruchtig-leicht bis schokoladig-intensiv. Genieße Kaffee, der nicht nur gut schmeckt, sondern auch Gutes bewirkt.</p>
             </article>
         </section>
@@ -31,7 +33,11 @@ const Home = ({viewport}) => {
         {/* Cards-Section zur Darstellung der Services */}
         <section className="flex flex-col justify-center items-center my-8" aria-label="Übersicht unseres Service">
             <h1>Unser Service</h1>
-            <article className="flex flex-row justify-around flex-wrap w-[80vw] my-8 mx-auto">
+            <article className="
+            my-8 mx-auto w-[80vw]
+            flex flex-row justify-around flex-wrap
+            laptop:grid laptop:grid-cols-2 laptop:grid-rows-2 laptop:justify-items-center laptop:w-[90vw]
+            ">
             <Card src={cardIcon1} 
                     alt="Icon einer Kaffee-Tüte" 
                     title="Einzigartige Sorten">
@@ -62,14 +68,14 @@ const Home = ({viewport}) => {
                 <img className="w-full h-full object-cover" src={coffeeBeans} alt="Kaffeebohnen auf einem rustikalen Tisch vor Bokeh-Lichtern" />
                 <figcaption>Kaffeebohnen auf einem rustikalen Tisch vor Bokeh-Lichtern</figcaption>
             </figure>
-            <article className="hero-article">
-            <h1 className="m-20" id="coffee-title">Unser Kaffee</h1>
+            <article className="hero-article w-[50vw]">
+            <h1 className="mt-20 mr-16" id="coffee-title">Unser Kaffee</h1>
             <p className="font-normal p-16">Unser Kaffee ist so vielfältig wie die Regionen, aus denen er stammt. Von den fruchtig-floralen Noten äthiopischer Bohnen über die schokoladige Tiefe brasilianischer Ernten bis hin zu den würzigen Akzenten indischer Spezialitäten und der lebendigen Süße aus Guatemala – wir kennen und lieben den Charakter jeder Herkunft. Durch unsere schonende Röstung und die Kunst, außergewöhnliche Blends zu kreieren, bringen wir das Beste aus jeder Bohne in deine Tasse. Das Ergebnis: Kaffee, der nicht nur schmeckt, sondern Geschichten erzählt – von den Feldern bis in deine Tasse.</p>
             </article>
         </section>
 
         {/* Featured-Blog-Post Section*/}
-        <section className="flex flex-col items-center max-h-[600px] h-[600px] overflow-hidden mb-32" aria-labelledby="featured-blog-post">
+        <section className="flex flex-col items-center max-h-[800px] h-[800px] overflow-hidden" aria-labelledby="featured-blog-post">
             <h1 className="mt-8 mb-4">Letzter Blog-Post</h1>
             <article className="flex w-screen justify-between font-bold text-center">
                 <div className="flex flex-col justify-center w-[50vw] p-16 text-left">
@@ -84,6 +90,9 @@ const Home = ({viewport}) => {
                 
             </article>
         </section>
+
+
+
     </main>
     );
     }

@@ -1,18 +1,19 @@
-module.exports = {
-  // purge: [],
-  // darkMode: false,
-  mode: "jit",
+/** @type {import('tailwindcss').Config} */
+export default {
   content: [
     "./index.html",
     "./src/**/*.{html,js,jsx,ts,tsx}",
-    "./src/components/**/*.{js,jsx,ts,tsx}",
-    "./src/pages/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
-  },
-  variants: {
+    screens: {
+      "phone-xs": {"max": "360px"},
+      "phone": {"max": "480px"},
+      "tablet": {"max": "768px"},
+      "laptop": {"max": "1080px"},
+      "desktop": {"max": "1440px"},
+    },
     extend: {},
   },
   plugins: [],
 }
+

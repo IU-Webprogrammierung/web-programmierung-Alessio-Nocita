@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "futura-pt", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.hero-section {
+  @apply flex justify-between items-center w-screen overflow-hidden;
+}
+
+.hero-article {
+  @apply flex flex-col items-end text-right h-full
+}
+
+
+
+
+
+
+
+
+
