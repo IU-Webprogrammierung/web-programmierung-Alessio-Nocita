@@ -1,6 +1,7 @@
 module.exports = {
   // purge: [],
   // darkMode: false,
+  mode: "jit",
   content: [
     "./index.html",
     "./src/**/*.{html,js,jsx,ts,tsx}",
@@ -10,8 +11,8 @@ module.exports = {
   theme: {
     extend: {},
   },
-  // variants: {
-  //   extend: {},
-  // },
+  variants: {
+    extend: {},
+  },
   plugins: [],
 }

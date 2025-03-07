@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hero-section {
+    @apply flex justify-between items-center w-screen overflow-hidden;
+}
+
+.hero-article {
+    @apply flex flex-col items-end text-right h-full
+}
