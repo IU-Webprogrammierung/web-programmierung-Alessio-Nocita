@@ -73,6 +73,10 @@ function App() {
       element: <Post viewport={viewport}/>,
       errorElement: <NotFound />
     },
+    {
+      path: '*',
+      element: <NotFound />
+    },
     ]
   }
   ])
