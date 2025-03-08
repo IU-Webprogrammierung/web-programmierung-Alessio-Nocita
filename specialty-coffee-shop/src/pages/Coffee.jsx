@@ -1,7 +1,5 @@
 import React from "react";
 
-import styles from "./Coffee.module.sass";
-
 import brazilCoffeeBag from "../assets/images/brazil_coffee_bag.png";
 import indiaCoffeeBag from "../assets/images/india_coffee_bag.png";
 import guatemalaCoffeeBag from "../assets/images/guatemala_coffee_bag.png";
