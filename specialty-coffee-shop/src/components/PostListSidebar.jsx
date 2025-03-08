@@ -5,7 +5,9 @@ import { Link } from "react-router-dom";
 
 const PostListSidebar = () => {
     return(
-        <aside className={styles.sideBar} aria-labelledby="aside-title">
+        <aside className={`${styles.sideBar} mr-10 mb-20 hidden row-start-2 row-end-3 col-start-2 col-end-3
+                            desktop:block`} 
+                            aria-labelledby="aside-title">
             <h2 id="aside-title">Artikelübersicht</h2>
             <ul>
                 <li>
