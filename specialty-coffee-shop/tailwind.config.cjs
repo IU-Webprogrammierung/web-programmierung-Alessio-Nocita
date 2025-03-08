@@ -3,14 +3,16 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{html,js,jsx,ts,tsx}",
+    "./components/*.{js,jsx,ts,tsx}",
+    "./pages/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     screens: {
-      "phone-xs": {"max": "360px"},
-      "phone": {"max": "480px"},
-      "tablet": {"max": "768px"},
-      "laptop": {"max": "1080px"},
-      "desktop": {"max": "1440px"},
+      "phone": "360px",
+      "tablet": "480px",
+      "laptop": "768px",
+      "desktop": "1080px",
+      "desktop-xl": "1440px",
     },
     extend: {},
   },
