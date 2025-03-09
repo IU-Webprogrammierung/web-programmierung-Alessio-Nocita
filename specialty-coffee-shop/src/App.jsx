@@ -14,8 +14,6 @@ import Post from './pages/Post'
 
 function App() {
 
-  const viewportHeight = window.innerHeight;
-  // speichert der Viewport-Breite in der Variable "viewport"
   const [viewport, setViewport] = useState(window.innerWidth);
   // speichert den Viewport-Height in der Variable "viewportHeight"
 

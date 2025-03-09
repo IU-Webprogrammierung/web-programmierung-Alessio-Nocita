@@ -12,63 +12,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-button {
-    font-family: "futura-pt", system-ui, Avenir, Helvetica, Arial, sans-serif;
-    font-size: 1.2rem;
-    background-color: transparent;
-    border: 2px solid black;
-    color: black;
-    min-width: 160px;
-    max-width: 300px;
-    padding: 15px 40px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 20px 2px;
-    cursor: pointer;
-    border-radius: 8px;
-    justify-self: flex-end;
-    align-self: flex-end;   
-}
 
-button:hover {
-        background-color: black;
-        border: 2px solid black;
-        color: white !important;
-}
-
-button.button-white {
-    color: white;
-    border: 1px solid white;
-}
-
-button.button-white:hover {
-    background-color: white;
-    color: black !important;
-    border: 1px solid white;
-}
-
-button.button-black {
-    color: black;
-    border: 1px solid black;
-}
-
-button.button-black:hover {
-    background-color: black;
-    color: white !important;
-    border: 1px solid black;
-}
-
-@media (max-width: 768px) {
-    button {
-      font-size: 1rem;
-      min-width: 120px;
-      max-width: 200px;
-      padding: 10px 20px;
-      margin: 10px 2px;
-      border-radius: 5px;
-    }
-}
 
 
 

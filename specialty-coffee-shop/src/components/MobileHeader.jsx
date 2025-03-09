@@ -1,7 +1,5 @@
 import React from "react";
 
-import styles from "./MobileHeader.module.sass";
-
 import { Link } from "react-router-dom";
 
 import Burgermenu from "./Burgermenu";
@@ -17,10 +15,10 @@ const MobileHeader = ({mobileMenuOpen, toggler}) => {
     }
 
     return(
-        <header className={styles.head}>
+        <header className="flex justify-around items-center w-5/6 mx-auto">
                     <Link to="/" aria-label="Gehe zur Homepage">
                     <figure>
-                        <img src={logo} alt="Specialty Coffee Duisburg Logo" />
+                        <img className="m-5 w-2/3" src={logo} alt="Specialty Coffee Duisburg Logo" />
                     </figure>
                     </Link>
             <Burgermenu mobileMenuOpen={mobileMenuOpen} toggler={handleClick}/>

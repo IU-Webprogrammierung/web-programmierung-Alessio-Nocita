@@ -1,6 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import MobileHeader from "./components/MobileHeader";
 import DesktopHeader from "./components/DesktopHeader";
@@ -11,7 +11,21 @@ import Footer from "./components/Footer";
 // Root-Komponente. Zeigt die Header-, Menu- und Footer-Komponenten responsiv an. 
 // Die Viewport-Größe wird als props von App.jsx übergeben.
 
-const Root = ({viewport}) => {
+const Root = (props) => {
+
+    const [viewport, setViewport] = useState(window.innerWidth);
+  // speichert den Viewport-Height in der Variable "viewportHeight"
+
+  
+    // setzt die Variable "viewport" wenn die Seite geladen wird
+  window.addEventListener("load", () => {
+    setViewport(window.innerWidth);
+  });
+
+    // aktualisiert die Variable "viewport" falls die Fenstergröße geändert wird
+  window.addEventListener("resize", () => {
+    setViewport(window.innerWidth);
+  });
 
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 

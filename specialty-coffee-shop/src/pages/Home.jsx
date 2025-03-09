@@ -21,13 +21,13 @@ const Home = ({ viewport }) => {
         aria-labelledby="hero-section"
       >
         <figure
-          className="h-[240px] max-h-[240px] object-cover
+          className="h-[240px] w-screen max-h-[240px] object-cover
                                 laptop:w-screen laptop:h-[400px] laptop:max-h-[400px]
                                 desktop:w-[50vw] desktop:h-[600px] desktop:max-h-[600px] desktop:object-[50%_30%]
                                 "
         >
           <img
-            className="h-[240px] max-h-[240px] object-cover object-[50%_30%]
+            className="h-[240px] w-screen max-h-[240px] object-cover object-[50%_30%]
                                 laptop:w-screen laptop:h-[400px] laptop:max-h-[400px] 
                                 desktop:w-[50vw] desktop:h-full desktop:max-h-none desktop:object-[50%_30%]
                                 "
@@ -45,7 +45,7 @@ const Home = ({ viewport }) => {
                                 "
         >
           <h1
-            className="mt-6 text-center
+            className="mt-6 w-screen mx-auto text-center
                             laptop:m-6
                             desktop: mr-20 desktop:text-right"
             id="hero-section"
@@ -73,8 +73,8 @@ const Home = ({ viewport }) => {
       >
         <h1>Unser Service</h1>
         <article
-          className="flex flex-col justify-start items-center my-8 mx-auto w-[90vw] text-[#333]
-            laptop:grid laptop:grid-cols-2 laptop:grid-rows-2 laptop:justify-items-center
+          className="flex flex-col justify-start items-center my-4 mx-auto w-[90vw] text-[#333]
+            laptop:grid laptop:grid-cols-2 laptop:grid-rows-2 laptop:justify-items-center laptop:my-8
             desktop:flex desktop:flex-row desktop:justify-around desktop:w-[70vw]
             "
         >
@@ -128,14 +128,14 @@ const Home = ({ viewport }) => {
         aria-labelledby="coffee-title"
       >
         <figure
-          className="h-[240px] max-h-[240px] object-cover
-                                laptop:w-screen laptop:h-[400px] laptop:max-h-[400px]
+          className="h-[240px] max-h-[240px] object-cover w-screen
+                                 laptop:h-[400px] laptop:max-h-[400px]
                                 desktop:w-[50vw] desktop:h-[600px] desktop:max-h-[600px] desktop:object-[50%_30%]
                                 "
         >
           <img
-            className="h-[240px] max-h-[240px] object-cover object-[50%_30%]
-                                laptop:w-screen laptop:h-[400px] laptop:max-h-[400px] 
+            className="h-[240px] max-h-[240px] object-cover object-[50%_30%] w-screen
+                                laptop:h-[400px] laptop:max-h-[400px] 
                                 desktop:w-[50vw] desktop:h-full desktop:max-h-none desktop:object-[50%_30%]"
             src={coffeeBeans}
             alt="Kaffeebohnen auf einem rustikalen Tisch vor Bokeh-Lichtern"
@@ -186,20 +186,20 @@ const Home = ({ viewport }) => {
                         desktop:flex-row desktop:justify-between desktop:text-left"
         >
           <div
-            className="flex flex-col justify-center text-center w-4/5 p-5 items-center
+            className="flex flex-col justify-center text-center w-3/4 p-5 items-center
                                 desktop:w-[50vw] desktop:text-left"
           >
             <h2
-              className="mb-4 text-2xl text-center
-                                    laptop:text-left
-                                    desktop:w-[80%] desktop:max-w-none desktop:pl-5"
+              className="mb-4 text-2xl text-center w-screen
+                                    laptop:text-left laptop:w-3/4 laptop:max-w-none 
+                                    desktop:pl-5"
               id="featured-blog-post"
             >
               Äthiopien: Wiege des Kaffees
             </h2>
             <p
-              className="font-normal text-left
-                                    laptop:p-5 laptop:items-center"
+              className="font-normal text-left w-5/6
+                                    laptop:w-3/4 laptop:p-5 laptop:items-center"
             >
               "Äthiopien gilt als die Wiege des Kaffees – hier, in den
               hochgelegenen Regionen des Horns von Afrika, hat die Pflanze ihren
@@ -209,15 +209,16 @@ const Home = ({ viewport }) => {
               Äthiopien ist nicht nur eine Ursprungsregion, sondern auch eine
               Schatzkammer aromatischer Vielfalt...
             </p>
+            <div className="w-5/6 text-right laptop:w-3/4">
             <Button
               text="Mehr dazu"
               link="/post/lastpost"
               aria="Lese unser letzter Blog-Artikel"
             />
+            </div>
           </div>
           <figure
             className="h-[240px] flex w-screen object:cover object-[50%_30%]
-                                tablet:h-[500px] tablet:max-h-[500px]
                                 laptop:max-h-[400px]
                                 desktop:w-[50vw] desktop:h-[600px] desktop:max-h-[600px] "
           >
