@@ -1,14 +1,9 @@
 @use "../styles/variables.sass" as *
     
-.navigationBar 
+nav
     ul
-        margin: 40px auto
-        width: 50vw
-        display: flex
-        justify-content: space-between
         li
-            list-style: none
-            a
+            a.inactive
                 text-decoration: none
                 color: #000
                 font-size: $font-size-medium
@@ -26,16 +21,6 @@
                     color: #f00
                 &:focus
                     color: $box-secondary-color
-
-@media only screen and (max-width: 1080px)
-    .navigationBar 
-        ul 
-            width: 70vw
-            li a, 
-            li a.active, 
-            li a:hover,
-            li a:focus
-                font-size: $font-size-small
 
 
     

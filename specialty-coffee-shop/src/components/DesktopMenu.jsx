@@ -8,37 +8,37 @@ import styles from "./DesktopMenu.module.sass";
 
 const DesktopMenu = () => {
     return(
-        <nav className={styles.navigationBar} aria-label="Navigation-Menu">
-            <ul>
-                <li>
+        <nav className="hidden w-2/3 mx-auto laptop:block desktop:w-1/2" aria-label="Navigation-Menu">
+            <ul className="flex justify-between my-10 mx-auto">
+                <li className="text-md active:text-md hover:text-md focus:text-md list-none">
                     <NavLink to="/" 
                     className={({isActive}) => isActive ? styles.active : styles.inactive}
                     aria-label="Gehe zur Homepage" exact>
                         Home
                     </NavLink>
                 </li>
-                <li>
+                <li className="text-md active:text-md hover:text-md focus:text-md list-none">
                     <NavLink 
                     className={({isActive}) => isActive ? styles.active : styles.inactive}
                     aria-label="Gehe zur 'Über uns'" to="/about">
                         Über uns
                     </NavLink>
                 </li>
-                <li>
+                <li className="text-md active:text-md hover:text-md focus:text-md list-none">
                     <NavLink 
                     className={({isActive}) => isActive ? styles.active : styles.inactive}
                     aria-label="Gehe zu 'Unser Kaffee'" to="/coffee">
                         Unser Kaffee
                     </NavLink>
                 </li>
-                <li>
+                <li className="text-md active:text-md hover:text-md focus:text-md list-none">
                     <NavLink 
                     className={({isActive}) => isActive ? styles.active : styles.inactive}
                     aria-label="Gehe zum Blog" to="/blog">
                         Blog
                     </NavLink>
                 </li>
-                <li>
+                <li className="text-md active:text-md hover:text-md focus:text-md list-none">
                     <NavLink 
                     className={({isActive}) => isActive ? styles.active : styles.inactive}
                     aria-label="Gehe zum Kontaktformular" to="/contact">

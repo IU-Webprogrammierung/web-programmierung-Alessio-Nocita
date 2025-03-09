@@ -8,7 +8,8 @@ const About = () => {
   return (
     <main>
       <section
-        className="flex flex-col items-center my-0 mx-auto max-w-[1440px] bg-[#f0f0f0] pt-10 pb-5 mb-20"
+        className="flex flex-col items-center my-0 mx-auto max-w-[1440px] bg-[#f0f0f0] pt-10 pb-5 
+                  tablet:mb-20"
         aria-labelledby="title"
       >
         <h1 class="text-5xl mb-10" id="title">
