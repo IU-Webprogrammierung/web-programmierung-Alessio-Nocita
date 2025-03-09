@@ -9,10 +9,10 @@ import logo from "../assets/images/specialty_coffee_duisburg_logo.png";
 
 const DesktopHeader = () => {
     return(
-        <header className={styles.head}>
+        <header className="flex justify-center z-100">
             <Link to="/" aria-label="Gehe zur Homepage">
             <figure>
-                <img src={logo} alt="Specialty Coffee Duisburg Logo" />
+                <img className="mt-5" src={logo} alt="Specialty Coffee Duisburg Logo" />
             </figure>
             </Link>
         </header>
