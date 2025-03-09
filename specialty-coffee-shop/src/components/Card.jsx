@@ -7,10 +7,10 @@ import styles from "./Card.module.sass";
 
 const Card = ({src, alt, title, children}) => {
     return(
-        <article className={styles.card} aria-label={alt}>
+        <article className="flex flex-col items-center text-center rounded-md shadow-md p-5 w-[200px] mb-5 bg-transparent" aria-label={alt}>
             <figure>
-                <img src={`${src}`} alt={`${alt}`}/>
-                <figcaption className={styles.cardTitle}>
+                <img className="mt-5 w-40 h-40" src={`${src}`} alt={`${alt}`}/>
+                <figcaption className="block text-md font-bold mt-5">
                     <h3>
                         {title}
                     </h3>
