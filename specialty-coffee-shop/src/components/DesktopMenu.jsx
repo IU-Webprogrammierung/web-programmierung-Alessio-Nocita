@@ -11,7 +11,7 @@ const DesktopMenu = () => {
                 <li className="text-md active:text-md hover:text-md focus:text-md list-none">
                     <NavLink to="/" 
                     className={({isActive}) => isActive ? "underline text-[#616b3a] text-2xl font-bold hover:text-red-800 focus:text-[#616b3a]" : "no-underline text-black text-2xl font-bold hover:text-red-800 focus:text-black"}
-                    aria-label="Gehe zur Homepage" exact>
+                    aria-label="Gehe zur Homepage">
                         Home
                     </NavLink>
                 </li>
