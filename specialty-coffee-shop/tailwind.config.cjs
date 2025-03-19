@@ -14,7 +14,12 @@ export default {
       "desktop": "1080px",
       "desktop-xl": "1440px",
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["Inter", "system-ui", "Avenir", "Helvetica", "Arial", "sans-serif"],
+        futura: ["Futura-pt", "system-ui", "Avenir", "Helvetica", "Arial", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 }

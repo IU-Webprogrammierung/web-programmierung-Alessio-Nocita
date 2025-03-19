@@ -2,14 +2,76 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  font-family: "futura-pt", system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@layer base {
+
+  :root {
+    font-family: "futura-pt", system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html, body {
+    @apply overflow-x-hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans;
+  }
+
+  h1 {
+    @apply text-5xl font-bold leading-tight;
+  }
+
+  h2 {
+    @apply text-4xl font-bold leading-snug;
+  }
+
+  p, li, label, input, textarea {
+    @apply text-lg leading-relaxed;
+  }
+
+  figcaption {
+    @apply hidden;
+  }
+}
+
+@layer components {
+  button {
+    @apply font-futura text-lg bg-transparent border-2 border-black text-black 
+           min-w-[160px] max-w-[300px] px-10 py-4 text-center no-underline 
+           inline-block my-5 cursor-pointer rounded-lg justify-self-end self-end 
+           transition-all duration-300 ease-in-out;
+  }
+
+  button:hover {
+    @apply bg-black text-white border-black;
+  }
+
+  .button-white {
+    @apply text-white border border-white;
+  }
+
+  .button-white:hover {
+    @apply bg-white text-black border-white;
+  }
+
+  .button-black {
+    @apply text-black border border-black;
+  }
+
+  .button-black:hover {
+    @apply bg-black text-white border-black;
+  }
+}
+
+@media (max-width: 768px) {
+  button {
+    @apply text-base min-w-[120px] max-w-[200px] px-5 py-2 my-2 rounded-md;
+  }
 }
 
 

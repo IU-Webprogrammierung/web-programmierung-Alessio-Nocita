@@ -1,7 +1,6 @@
 import { useState } from 'react'
-import './App.sass'
 
-import { createBrowserRouter, Router, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
 import NotFound from './pages/NotFound'
@@ -33,7 +32,7 @@ function App() {
   const router = createBrowserRouter([
     {
       path: '/',
-      element: <Root viewport = {viewport}/>,
+      element: <Root/>,
       errorElement: <NotFound />,
       children: [
         {
