@@ -14,9 +14,7 @@ import Footer from "./components/Footer";
 const Root = (props) => {
 
     const [viewport, setViewport] = useState(window.innerWidth);
-  // speichert den Viewport-Height in der Variable "viewportHeight"
 
-  
     // setzt die Variable "viewport" wenn die Seite geladen wird
   window.addEventListener("load", () => {
     setViewport(window.innerWidth);
