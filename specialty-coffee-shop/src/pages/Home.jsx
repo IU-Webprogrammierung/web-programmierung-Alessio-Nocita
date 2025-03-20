@@ -11,7 +11,7 @@ import cardIcon2 from "../assets/images/handshake.svg";
 import cardIcon3 from "../assets/images/espresso-machine.svg";
 import cardIcon4 from "../assets/images/calendar.svg";
 
-const Home = ({ viewport }) => {
+const Home = () => {
   return (
     <main>
       {/* Hero-Section */}
@@ -75,7 +75,7 @@ const Home = ({ viewport }) => {
         <article
           className="flex flex-col justify-start items-center my-4 mx-auto w-[90vw] text-primary
             laptop:grid laptop:grid-cols-2 laptop:grid-rows-2 laptop:justify-items-center laptop:my-8
-            desktop:flex desktop:flex-row desktop:justify-around desktop:w-[70vw]
+            desktop:flex desktop:flex-row desktop:justify-around desktop:w-[80vw]
             "
         >
           <Card
