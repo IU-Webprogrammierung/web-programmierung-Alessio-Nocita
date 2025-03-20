@@ -52,7 +52,7 @@ const Contact = () => {
     isEmailTouched,
     isMessageTouched,
   ]);
-  
+
   const validateFirstName = (firstName) => {
     if (firstName === "") {
       return "Bitte geben Sie Ihren Vornamen ein.";
@@ -224,8 +224,8 @@ const Contact = () => {
           onBlur={handleMessageBlur}
         ></textarea>
         <div className="w-5/6 tablet:w-2/3 my-2 text-left text-md text-red-800">{messageErrorMessage}</div>
-        <div className="w-5/6 tablet:w-2/3 my-2 border text-right">
-          <Button text="Absenden" link="#" aria="Button zum Absenden" formValid={isFormValid}/>
+        <div className="w-5/6 tablet:w-2/3 my-2 border text-right border-none">
+          <Button text="Absenden" link="#" aria="Button zum Absenden" color="black" formValid={isFormValid}/>
         </div>
       </form>
     </section>

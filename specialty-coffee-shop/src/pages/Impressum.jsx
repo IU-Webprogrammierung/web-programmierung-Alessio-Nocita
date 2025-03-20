@@ -70,7 +70,7 @@ const Impressum = () => {
           </p>
         </article>
         <div className="mt-6 flex justify-center">
-          <Button text="Zurück zu Home" link="/" aria="Zurück zu Home" />
+          <Button text="Zurück zu Home" link="/" aria="Zurück zu Home" formValid={true}/>
         </div>
       </section>
     </main>

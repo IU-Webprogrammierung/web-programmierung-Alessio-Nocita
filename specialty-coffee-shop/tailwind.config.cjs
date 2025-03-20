@@ -6,6 +6,11 @@ export default {
     "./components/*.{js,jsx,ts,tsx}",
     "./pages/*.{js,jsx,ts,tsx}",
   ],
+  safelist: [
+    "button-white",
+    "button-black",
+    "button-disabled"
+  ],
   theme: {
     screens: {
       "phone": "360px",

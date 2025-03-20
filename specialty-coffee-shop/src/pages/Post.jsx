@@ -131,7 +131,7 @@ const Post = () => {
             className="text-right w-3/4 justify-self-center
                              desktop:w-2/3"
           >
-            <Button text="Zurück" link="/blog" aria="Zurück zu Blog" />
+            <Button text="Zurück" link="/blog" aria="Zurück zu Blog" formValid={true}/>
           </div>
         </article>
       </section>

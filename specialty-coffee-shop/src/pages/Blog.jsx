@@ -78,6 +78,7 @@ const Blog = ({ viewport }) => {
               link="/post/ethiopia"
               aria="Erfahre mehr über den Kaffee-Land Äthiopien"
               color="white"
+              formValid={true}
             />
           </div>
         </article>
@@ -126,6 +127,8 @@ const Blog = ({ viewport }) => {
               text="Mehr lesen"
               link="/post/espresso"
               aria="Erfahre mehr darüber, wie man den perfekten Espresso zubereitet"
+              color="black"
+              formValid={true}
             />
           </div>
         </article>
@@ -173,6 +176,7 @@ const Blog = ({ viewport }) => {
               link="/post/origin"
               aria="Erfahre mehr über den Unterschied zwischen Single Origins und Blends"
               color="white"
+              formValid={true}
             />
           </div>
         </article>
@@ -222,6 +226,8 @@ const Blog = ({ viewport }) => {
               text="Mehr lesen"
               link="/post/latte"
               aria="Erfahre mehr über die Kunst des Latte Art"
+              color="black"
+              formValid={true}
             />
           </div>
         </article>

@@ -214,6 +214,8 @@ const Home = () => {
               text="Mehr dazu"
               link="/post/lastpost"
               aria="Lese unser letzter Blog-Artikel"
+              formValid={true}
+              color="black"
             />
             </div>
           </div>

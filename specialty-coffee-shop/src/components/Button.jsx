@@ -5,23 +5,31 @@ import { useState, useEffect } from "react";
 // Button-Komponente
 // diese importiert aria-label, text und Verlinkung als props
 
-const Button = ({text, link, aria, color, formValid}) => {
+const Button = ({text, link, aria, color="white", formValid}) => {
 
     const [disabled, setDisabled] = useState(false);
+    const [buttonColor, setButtonColor] = useState(color);
 
     useEffect(() => {
-        if (!formValid && typeof formValid!==undefined) {
+        if (color === "black") {
+            setButtonColor("black");
+        } else if (color === "white") {
+            setButtonColor("white");
+        }
+    }
+    , [color]);
+
+    useEffect(() => {
+        if (!formValid) {
             setDisabled(true);
         } else {
             setDisabled(false);
         }
-        if (color !== "white") {
-            color = "black";
-        }
-
     }, [formValid]);
 
     const navigate = useNavigate();
+
+   
 
     const handleClick = () => {
         navigate(link);
@@ -30,7 +38,7 @@ const Button = ({text, link, aria, color, formValid}) => {
 
     return(
         <button
-            className={`${disabled ? "button-disabled" : `button-${color}`}`}
+            className={`${disabled ? "button-disabled" : `button-${buttonColor}`}`}
             aria-label={aria} 
             tabIndex="0"
             onClick={handleClick}>

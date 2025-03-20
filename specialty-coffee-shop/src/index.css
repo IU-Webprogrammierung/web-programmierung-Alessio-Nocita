@@ -35,18 +35,14 @@
 
 @layer components {
   button {
-    @apply font-futura text-lg bg-transparent border-2 border-black text-black 
+    @apply font-futura text-lg border-2
            min-w-[160px] max-w-[300px] px-10 py-4 text-center no-underline 
            inline-block my-5 cursor-pointer rounded-lg justify-self-end self-end 
            transition-all duration-300 ease-in-out;
   }
 
-  button:hover {
-    @apply bg-black text-white border-black;
-  }
-
   .button-white {
-    @apply text-white border border-white;
+    @apply text-white border-white;
   }
 
   .button-white:hover {
@@ -54,7 +50,7 @@
   }
 
   .button-black {
-    @apply text-black border border-black;
+    @apply text-black border-black;
   }
 
   .button-black:hover {
@@ -75,16 +71,3 @@
     @apply text-base min-w-[120px] max-w-[200px] px-5 py-2 my-2 rounded-md;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
