@@ -5,9 +5,7 @@
 @layer base {
 
   :root {
-    @apply font-futura;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    @apply font-futura antialiased;
   }
 
   html, body {
