@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import logo from "../assets/images/specialty_coffee_duisburg_logo.png";
 
 // Desktop-Header-Komponente
-// zeigt das Logo (mit Homepage verlinkt) an
+// zeigt das Logo an (mit Homepage verlinkt)
 
 const DesktopHeader = () => {
     return(

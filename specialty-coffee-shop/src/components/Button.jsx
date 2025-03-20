@@ -10,6 +10,7 @@ const Button = ({text, link, aria, color="white", formValid}) => {
     const [disabled, setDisabled] = useState(false);
     const [buttonColor, setButtonColor] = useState(color);
 
+    // Farb-Kontrolle
     useEffect(() => {
         if (color === "black") {
             setButtonColor("black");
@@ -19,6 +20,7 @@ const Button = ({text, link, aria, color="white", formValid}) => {
     }
     , [color]);
 
+    // Button-Deaktivierung bei Formularfehlern
     useEffect(() => {
         if (!formValid) {
             setDisabled(true);
@@ -29,7 +31,6 @@ const Button = ({text, link, aria, color="white", formValid}) => {
 
     const navigate = useNavigate();
 
-   
 
     const handleClick = () => {
         navigate(link);

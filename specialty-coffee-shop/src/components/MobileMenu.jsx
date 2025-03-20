@@ -10,9 +10,20 @@ import { NavLink } from "react-router-dom";
 
 const MobileMenu = ({isOpen, toggler}) => {
 
+    // schließt das Menü bei Klick auf einen Link
+    // der Toggler ist importiert aus der MobileHeader-Komponente
+    // die ihn wiederum aus Root.jsx erhält
+    // und wird dort als handleClick-Funktion definiert
+    // der Toggler sendet per State Uplift das Befehl zum Schalten des isOpen-Status
+    // der dann hierher als props zurückgesendet wird
+
     const linkClickHandler = () => {
         toggler();
     }
+
+    // verschiebt das Menu aus dem Viewport hinein und heraus
+    // und sperrt/entsperrt das Scrollen des Body-Inhalts
+    // je nach Zustand von isOpen
 
      useEffect(() => {
         if (isOpen) {

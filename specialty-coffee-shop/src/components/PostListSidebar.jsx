@@ -2,6 +2,8 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
+// Sidebar-Komponente mit einer Liste von Links zu den Blog-Artikeln
+
 const PostListSidebar = () => {
     return(
         <aside className="hidden text-primary bg-secondary max-w-[20vw] justify-self-end p-5 mr-10 mb-20 row-start-2 row-end-3 col-start-2 col-end-3

@@ -11,22 +11,26 @@ import Footer from "./components/Footer";
 // Root-Komponente. Zeigt die Header-, Menu- und Footer-Komponenten responsiv an. 
 // Die Viewport-Größe wird als props von App.jsx übergeben.
 
-const Root = (props) => {
+const Root = () => {
 
+
+// setzt die Variable "viewport" wenn die Seite geladen wird
     const [viewport, setViewport] = useState(window.innerWidth);
 
-    // setzt die Variable "viewport" wenn die Seite geladen wird
   window.addEventListener("load", () => {
     setViewport(window.innerWidth);
   });
 
-    // aktualisiert die Variable "viewport" falls die Fenstergröße geändert wird
+// aktualisiert die Variable "viewport" falls die Fenstergröße geändert wird
   window.addEventListener("resize", () => {
     setViewport(window.innerWidth);
   });
 
+  // State für das Mobile Menu
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+    // Event Handler für das Mobile Menu. Wird per Uplift von MobileHeader und MobileMenu getriggert
+    // und sendet das isOpen-Status zurück
     const handleClick = () => {
         setMobileMenuOpen((prev) => !prev);
     }

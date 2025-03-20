@@ -9,27 +9,33 @@ import Button from "../components/Button";
 
 const Contact = () => {
 
+  // States für die Erfassung der Eingabefelder
   const [firstNameInput, setFirstNameInput] = useState("");
   const [lastNameInput, setLastNameInput] = useState("");
   const [emailInput, setEmailInput] = useState("");
   const [messageInput, setMessageInput] = useState("");
 
+  // States für die Fehlermeldungen
   const [firstNameErrorMessage, setFirstNameErrorMessage] = useState("");
   const [lastNameErrorMessage, setLastNameErrorMessage] = useState("");
   const [emailErrorMessage, setEmailErrorMessage] = useState("");
   const [messageErrorMessage, setMessageErrorMessage] = useState("");
 
+  // States für die Touched-Status (ob ein Feld schon bearbeitet wurde)
   const [isFirstNameTouched, setIsFirstNameTouched] = useState(false);
   const [isLastNameTouched, setIsLastNameTouched] = useState(false);
   const [isEmailTouched, setIsEmailTouched] = useState(false);
   const [isMessageTouched, setIsMessageTouched] = useState(false);
 
+  // State für die allgemeine Validierung des Formulars (wichtig zum sperren/entsperren des Absende-Buttons)
   const [isFormValid, setIsFormValid] = useState();
 
+  // Reguläre Ausdrücke für die Validierung (unterschiedlich für Name, E-Mail und Nachricht)
   const nameRegex = /^[a-zA-Z-]+$/;
   const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
   const messageRegex = /^[a-zA-Z0-9-.,;:!?() ]+$/;
 
+  // Überprüfung der Gültigkeit des Formulars bei jeder Eingabe
   useEffect(() => {
     const isValid =
       firstNameErrorMessage === "" &&
@@ -53,6 +59,7 @@ const Contact = () => {
     isMessageTouched,
   ]);
 
+  // Validierungsfunktion und Fehlermeldungen für das Feld "Vorname"
   const validateFirstName = (firstName) => {
     if (firstName === "") {
       return "Bitte geben Sie Ihren Vornamen ein.";
@@ -64,6 +71,7 @@ const Contact = () => {
     return "";
   }
 
+  // Validierungsfunktion und Fehlermeldungen für das Feld "Nachname"
   const validateLastName = (lastName) => {
     if (lastName === "") {
       return "Bitte geben Sie Ihren Nachnamen ein.";
@@ -75,6 +83,7 @@ const Contact = () => {
     return "";
   }
 
+  // Validierungsfunktion und Fehlermeldungen für das Feld "E-Mail"
   const validateEmail = (email) => {
     if (email === "") {
       return "Bitte geben Sie Ihre E-Mail-Adresse ein.";
@@ -84,6 +93,7 @@ const Contact = () => {
     return "";
   }
 
+  // Validierungsfunktion und Fehlermeldungen für das Feld "Nachricht"
   const validateMessage = (message) => {
     if (message === "") {
       return "Bitte geben Sie eine Nachricht ein.";
@@ -95,6 +105,7 @@ const Contact = () => {
     return "";
   }
 
+  // onChange-Event-Handler für "Vorname". Triggert die Validierungsfunktionen bei jeder Eingabe
   const handleFirstNameChange = (event) => {
     setFirstNameInput(event.target.value);
    if (isFirstNameTouched) {
@@ -102,7 +113,7 @@ const Contact = () => {
     }
   }
 
-
+  // onChange-Event-Handler für "Nachname". Triggert die Validierungsfunktionen bei jeder Eingabe
   const handleLastNameChange = (event) => {
     setLastNameInput(event.target.value);
     if (isLastNameTouched) {
@@ -110,6 +121,7 @@ const Contact = () => {
     }
   }
 
+  // onChange-Event-Handler für "E-Mail". Triggert die Validierungsfunktionen bei jeder Eingabe
   const handleEmailChange = (event) => {
     setEmailInput(event.target.value);
     if (isEmailTouched) {
@@ -117,6 +129,7 @@ const Contact = () => {
   }
   }
 
+  // onChange-Event-Handler für "Nachricht". Triggert die Validierungsfunktionen bei jeder Eingabe
   const handleMessageChange = (event) => {
     setMessageInput(event.target.value);
     if (isMessageTouched) {
@@ -124,26 +137,35 @@ const Contact = () => {
     }
 }
 
+  // onBlur-Event-Handler für "Vorname". Triggert die Validierungsfunktionen bei Verlassen des Feldes
+  // und setzt den Touched-Status auf "true"
   const handleFirstNameBlur = () => {
     setIsFirstNameTouched(true);
     setFirstNameErrorMessage(validateFirstName(firstNameInput));
   }
 
+  // onBlur-Event-Handler für "Nachname". Triggert die Validierungsfunktionen bei Verlassen des Feldes
+  // und setzt den Touched-Status auf "true"
   const handleLastNameBlur = () => {
     setIsLastNameTouched(true);
     setLastNameErrorMessage(validateLastName(lastNameInput));
   }
 
+  // onBlur-Event-Handler für "E-Mail". Triggert die Validierungsfunktionen bei Verlassen des Feldes
+  // und setzt den Touched-Status auf "true"
   const handleEmailBlur = () => {
     setIsEmailTouched(true);
     setEmailErrorMessage(validateEmail(emailInput));
   }
 
+  // onBlur-Event-Handler für "Nachricht". Triggert die Validierungsfunktionen bei Verlassen des Feldes
+  // und setzt den Touched-Status auf "true"
   const handleMessageBlur = () => {
     setIsMessageTouched(true);
     setMessageErrorMessage(validateMessage(messageInput));
   }
 
+  // Formular
   return (
     <section>
       <h1 className="text-5xl my-5 text-center" aria-label="Kontaktformular">

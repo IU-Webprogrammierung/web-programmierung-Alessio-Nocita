@@ -13,11 +13,9 @@ import Post from './pages/Post'
 
 function App() {
 
+  // setzt die Variable "viewport" wenn die Seite geladen wird
   const [viewport, setViewport] = useState(window.innerWidth);
-  // speichert den Viewport-Height in der Variable "viewportHeight"
 
-  
-// setzt die Variable "viewport" wenn die Seite geladen wird
   window.addEventListener("load", () => {
     setViewport(window.innerWidth);
   });
@@ -27,6 +25,7 @@ function App() {
     setViewport(window.innerWidth);
   });
 
+  
   // erstellt die Router-Konfiguration für alle Seiten
 
   const router = createBrowserRouter([

@@ -5,7 +5,7 @@ import facebook_logo from "../assets/images/facebook_logo.png";
 import instagram_logo from "../assets/images/instagram_logo.png";
 
 // Footer-Komponente
-// zeigt eine Copyright-Angabe, das Impressum und Social Media-Links an
+// zeigt eine Copyright-Angabe (nur ab Laptop-Ansicht), das Impressum und Social Media-Links an
 
 const Footer = ({viewport}) => {
 

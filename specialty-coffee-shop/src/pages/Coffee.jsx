@@ -7,6 +7,8 @@ import guatemalaCoffeeBag from "../assets/images/guatemala_coffee_bag.png";
 // "Unser Kaffee" Seite, die die verschiedenen Kaffeesorten vorstellt
 // Jeder Artikel enthält ein Bild, den Kaffee-Namen, eine Beschreibung
 // und einen ausführlichen Vorstellungstext
+// das Design enthält bei kleinen Bildschirmen ein Wechsel von Hintergrundfarben
+// bei größeren Bildschirmen ist der Hintergrund transparent
 
 const Coffee = () => {
   return (
