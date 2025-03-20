@@ -66,6 +66,14 @@
   .button-black:hover {
     @apply bg-black text-white border-black;
   }
+
+  .button-disabled {
+    @apply text-gray-400 border-gray-400 cursor-not-allowed;
+  }
+
+  .button-disabled:hover {
+    @apply bg-transparent text-gray-400 border-gray-400;
+  }
 }
 
 @media (max-width: 768px) {
