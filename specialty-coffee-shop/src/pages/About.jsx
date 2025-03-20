@@ -8,7 +8,7 @@ const About = () => {
   return (
     <main>
       <section
-        className="flex flex-col items-center my-0 mx-auto max-w-[1440px] bg-[#f0f0f0] pt-10 pb-5 
+        className="flex flex-col items-center my-0 mx-auto max-w-[1440px] bg-secondary pt-10 pb-5 
                   tablet:mb-20"
         aria-labelledby="title"
       >
@@ -16,7 +16,7 @@ const About = () => {
           Über uns
         </h1>
         <article
-          className="flex flex-col items-center gap-0 m-0 w-full text-[#333]
+          className="flex flex-col items-center gap-0 m-0 w-full text-primary
                                     laptop:flex-row laptop:items-start laptop:gap-5"
         >
           <figure>

@@ -31,7 +31,7 @@ const Blog = ({ viewport }) => {
         aria-label="Blog-Artikel"
       >
         <article
-          className="flex flex-col items-center justify-start h-auto min-h-none odd:bg-[#616b30] even:bg-[#f0f0f0] odd:text-[#f0f0f0] even:text-[#333]
+          className="flex flex-col items-center justify-start h-auto min-h-none odd:bg-[#616b30] even:bg-secondary odd:text-secondary even:text-primary
                                     desktop:h-[600px] desktop:min-h-[600px] desktop:w-[70vw] desktop:odd:flex-row desktop:even:flex-row-reverse"
         >
           <figure
@@ -83,7 +83,7 @@ const Blog = ({ viewport }) => {
         </article>
 
         <article
-          className="flex flex-col items-center justify-start h-auto min-h-none odd:bg-[#616b30] even:bg-[#f0f0f0] odd:text-[#f0f0f0] even:text-[#333]
+          className="flex flex-col items-center justify-start h-auto min-h-none odd:bg-[#616b30] even:bg-secondary odd:text-secondary even:text-primary
                                     desktop:h-[600px] desktop:min-h-[600px] desktop:w-[70vw] desktop:odd:flex-row desktop:even:flex-row-reverse"
         >
           <figure
@@ -130,7 +130,7 @@ const Blog = ({ viewport }) => {
           </div>
         </article>
         <article
-          className="flex flex-col items-center justify-start h-auto min-h-none odd:bg-[#616b30] even:bg-[#f0f0f0] odd:text-[#f0f0f0] even:text-[#333]
+          className="flex flex-col items-center justify-start h-auto min-h-none odd:bg-[#616b30] even:bg-secondary odd:text-secondary even:text-primary
                                     desktop:h-[600px] desktop:min-h-[600px] desktop:w-[70vw] desktop:odd:flex-row desktop:even:flex-row-reverse"
         >
           <figure
@@ -178,7 +178,7 @@ const Blog = ({ viewport }) => {
         </article>
 
         <article
-          className="flex flex-col items-center justify-start h-auto min-h-none odd:bg-[#616b30] even:bg-[#f0f0f0] odd:text-[#f0f0f0] even:text-[#333]
+          className="flex flex-col items-center justify-start h-auto min-h-none odd:bg-[#616b30] even:bg-secondary odd:text-secondary even:text-primary
                                     desktop:h-[600px] desktop:min-h-[600px] desktop:w-[70vw] desktop:odd:flex-row desktop:even:flex-row-reverse"
         >
           <figure

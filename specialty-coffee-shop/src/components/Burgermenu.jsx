@@ -10,20 +10,20 @@ const Burgermenu = ({ mobileMenuOpen, toggler }) => {
       onClick={toggler}
       aria-label="Gehe zur mobilen Navigation"
     >
-      <span className={`block absolute h-[6px] w-full bg-[#333] rounded-md left-0 transition-all ease-in-out
-        ${mobileMenuOpen ? "top-[12px] w-[0px] left-[50%] bg-[#f0f0f0] duration-200 opacity-0" : "top-0 block opacity-100 duration-500"}
+      <span className={`block absolute h-[6px] w-full bg-primary rounded-md left-0 transition-all ease-in-out
+        ${mobileMenuOpen ? "top-[12px] w-[0px] left-[50%] bg-secondary duration-200 opacity-0" : "top-0 block opacity-100 duration-500"}
       `}></span>
 
-      <span className={`block absolute h-[6px] w-full bg-[#333] rounded-md opacity-100 left-0 transition-all ease-in-out
-        ${mobileMenuOpen ? "rotate-45 top-[12px] bg-[#f0f0f0] duration-200" : "top-[12px] duration-500"}
+      <span className={`block absolute h-[6px] w-full bg-primary rounded-md opacity-100 left-0 transition-all ease-in-out
+        ${mobileMenuOpen ? "rotate-45 top-[12px] bg-secondary duration-200" : "top-[12px] duration-500"}
       `}></span>
 
-      <span className={`block absolute h-[6px] w-full bg-[#333] rounded-md opacity-100 left-0 transition-all ease-in-out
-        ${mobileMenuOpen ? "-rotate-45 top-[12px] bg-[#f0f0f0] duration-200" : "top-[12px] duration-500"}
+      <span className={`block absolute h-[6px] w-full bg-primary rounded-md opacity-100 left-0 transition-all ease-in-out
+        ${mobileMenuOpen ? "-rotate-45 top-[12px] bg-secondary duration-200" : "top-[12px] duration-500"}
       `}></span>
 
-      <span className={`block absolute h-[6px] w-full bg-[#333] rounded-md left-0 transition-all  ease-in-out
-        ${mobileMenuOpen ? "top-[12px] w-[0px] left-[50%] bg-[#f0f0f0] duration-200 opacity-0" : "top-[24px] opacity-100 duration-500"}
+      <span className={`block absolute h-[6px] w-full bg-primary rounded-md left-0 transition-all  ease-in-out
+        ${mobileMenuOpen ? "top-[12px] w-[0px] left-[50%] bg-secondary duration-200 opacity-0" : "top-[24px] opacity-100 duration-500"}
       `}></span>
     </div>
   );

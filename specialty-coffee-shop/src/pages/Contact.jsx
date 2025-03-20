@@ -13,7 +13,7 @@ const Contact = () => {
         Kontakt
       </h1>
       <form
-        className="flex flex-col items-center justify-start border border-[#333] rounded-lg text-[#333] bg-[#f0f0f0] w-2/3 p-2 mx-auto mb-40
+        className="flex flex-col items-center justify-start border border-primary rounded-lg text-primary bg-secondary w-2/3 p-2 mx-auto mb-40
                         tablet:p-5
                         desktop:w-1/3"
       >
@@ -25,7 +25,7 @@ const Contact = () => {
           Vorname:
         </label>
         <input
-          className="w-5/6 tablet:w-2/3 mb-3 p-3 border border-[#333] rounded-lg"
+          className="w-5/6 tablet:w-2/3 mb-3 p-3 border border-primary rounded-lg"
           type="text"
           id="first-name"
           name="first-name"
@@ -41,7 +41,7 @@ const Contact = () => {
           Nachname:
         </label>
         <input
-          className="w-5/6 tablet:w-2/3 mb-3 p-3 border border-[#333] rounded-lg"
+          className="w-5/6 tablet:w-2/3 mb-3 p-3 border border-primary rounded-lg"
           type="text"
           id="last-name"
           name="last-name"
@@ -53,7 +53,7 @@ const Contact = () => {
           E-Mail:
         </label>
         <input
-          className="w-5/6 tablet:w-2/3 mb-3 p-3 border border-[#333] rounded-lg"
+          className="w-5/6 tablet:w-2/3 mb-3 p-3 border border-primary rounded-lg"
           type="email"
           id="email"
           name="email"
@@ -67,7 +67,7 @@ const Contact = () => {
           Nachricht:
         </label>
         <textarea
-          className="w-5/6 mb-3 tablet:w-2/3 border border-[#333] rounded-lg"
+          className="w-5/6 mb-3 tablet:w-2/3 border border-primary rounded-lg"
           id="message"
           name="message"
           rows="10"

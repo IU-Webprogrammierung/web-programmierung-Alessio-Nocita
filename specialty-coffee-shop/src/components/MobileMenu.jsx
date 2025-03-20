@@ -30,29 +30,29 @@ const MobileMenu = ({isOpen, toggler}) => {
       }, [isOpen]);
 
     return(
-        <nav className={`flex flex-col justify-center items-center fixed top-0 w-screen h-screen bg-[#333] transition-left duration-500 z-[500] ${isOpen ? "left-0" : "left-[-100vw]"}`} aria-label="Navigation-Menu">
+        <nav className={`flex flex-col justify-center items-center fixed top-0 w-screen h-screen bg-primary transition-left duration-500 z-[500] ${isOpen ? "left-0" : "left-[-100vw]"}`} aria-label="Navigation-Menu">
             <ul className="grid grid-rows-5 grid-cols-1 list-none h-2/3 w-2/3 ">
-                <li className="text-[#f0f0f0] no-underline text-center text-3xl cursor-pointer self-center justify-self-center hover:text-[#333] hover:underline">
+                <li className="text-secondary no-underline text-center text-3xl cursor-pointer self-center justify-self-center hover:text-primary hover:underline">
                     <NavLink onClick={linkClickHandler} to="/" aria-label="Gehe zur Homepage">
                         Home
                     </NavLink>
                 </li>
-                <li className="text-[#f0f0f0] no-underline text-center text-3xl cursor-pointer self-center justify-self-center hover:text-[#333] hover:underline">
+                <li className="text-secondary no-underline text-center text-3xl cursor-pointer self-center justify-self-center hover:text-primary hover:underline">
                     <NavLink onClick={linkClickHandler} aria-label="Gehe zur 'Über uns'" to="/about">
                         Über uns
                     </NavLink>
                 </li>
-                <li className="text-[#f0f0f0] no-underline text-center text-3xl cursor-pointer self-center justify-self-center hover:text-[#333] hover:underline">
+                <li className="text-secondary no-underline text-center text-3xl cursor-pointer self-center justify-self-center hover:text-primary hover:underline">
                     <NavLink onClick={linkClickHandler} aria-label="Gehe zu 'Unser Kaffee'" to="/coffee">
                         Unser Kaffee
                     </NavLink>
                 </li>
-                <li className="text-[#f0f0f0] no-underline text-center text-3xl cursor-pointer self-center justify-self-center hover:text-[#333] hover:underline">
+                <li className="text-secondary no-underline text-center text-3xl cursor-pointer self-center justify-self-center hover:text-primary hover:underline">
                     <NavLink onClick={linkClickHandler} aria-label="Gehe zum Blog" to="/blog">
                         Blog
                     </NavLink>
                 </li>
-                <li className="text-[#f0f0f0] no-underline text-center text-3xl cursor-pointer self-center justify-self-center hover:text-[#333] hover:underline">
+                <li className="text-secondary no-underline text-center text-3xl cursor-pointer self-center justify-self-center hover:text-primary hover:underline">
                     <NavLink onClick={linkClickHandler} aria-label="Gehe zum Kontaktformular" to="/contact">
                         Kontakt
                     </NavLink>

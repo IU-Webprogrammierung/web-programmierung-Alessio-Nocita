@@ -16,7 +16,7 @@ const Home = ({ viewport }) => {
     <main>
       {/* Hero-Section */}
       <section
-        className="flex flex-col h-auto max-h-none text-[#333]
+        className="flex flex-col h-auto max-h-none text-primary
                             desktop:flex-row desktop:justify-between desktop:items-center desktop:w-screen desktop:overflow-hidden desktop:h-[600px] desktop:min-h-[600px]"
         aria-labelledby="hero-section"
       >
@@ -73,7 +73,7 @@ const Home = ({ viewport }) => {
       >
         <h1>Unser Service</h1>
         <article
-          className="flex flex-col justify-start items-center my-4 mx-auto w-[90vw] text-[#333]
+          className="flex flex-col justify-start items-center my-4 mx-auto w-[90vw] text-primary
             laptop:grid laptop:grid-cols-2 laptop:grid-rows-2 laptop:justify-items-center laptop:my-8
             desktop:flex desktop:flex-row desktop:justify-around desktop:w-[70vw]
             "
@@ -123,7 +123,7 @@ const Home = ({ viewport }) => {
 
       {/* Section zur Präsentation des Kaffees */}
       <section
-        className="flex flex-col h-auto max-h-none text-[#333]
+        className="flex flex-col h-auto max-h-none text-primary
                             desktop:flex-row desktop:justify-between desktop:items-center desktop:w-screen desktop:overflow-hidden desktop:h-[600px] desktop:min-h-[600px]"
         aria-labelledby="coffee-title"
       >
@@ -174,7 +174,7 @@ const Home = ({ viewport }) => {
 
       {/* Featured-Blog-Post Section*/}
       <section
-        className="flex flex-col items-center w-screen h-auto max-h-none mb-0 text-[#333]
+        className="flex flex-col items-center w-screen h-auto max-h-none mb-0 text-primary
                             desktop:max-h-[600px] desktop:h-[600px] desktop:overflow-hidden desktop:mb-20"
         aria-labelledby="featured-blog-post"
       >

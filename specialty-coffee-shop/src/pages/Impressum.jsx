@@ -7,7 +7,7 @@ const Impressum = () => {
   return (
     <main>
       <section
-        className="w-[80vw] mx-auto mb-[120px] text-[#333] bg-[#f0f0f0] p-[40px] 
+        className="w-[80vw] mx-auto mb-[120px] text-primary bg-secondary p-[40px] 
                    tablet:w-[90vw] tablet:p-[20px]"
         aria-labelledby="impressum-title"
       >

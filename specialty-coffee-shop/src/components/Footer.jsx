@@ -14,7 +14,7 @@ const Footer = ({viewport}) => {
     }
 
     return(
-        <footer className="relative bg-[#333] text-white px-5 py-2 grid grid-cols-[50%_50%] justify-center overflow-hidden grid-rows-1 box-border w-full h-[72px] font-md bottom-0 left-0 z-100 laptop:fixed desktop:px-20 desktop:py-5 desktop:grid-cols-5 desktop:grid-rows-1
+        <footer className="relative bg-primary text-white px-5 py-2 grid grid-cols-[50%_50%] justify-center overflow-hidden grid-rows-1 box-border w-full h-[72px] font-md bottom-0 left-0 z-100 laptop:fixed desktop:px-20 desktop:py-5 desktop:grid-cols-5 desktop:grid-rows-1
                                 laptop:grid-col-5 " aria-label="Footer">
             {viewport > 768 && <div className="hidden col-start-1 col-end-3 self-center desktop:block">©2025 Alessio Nocita - Specialty Coffee Duisburg</div>}
             <div className="flex justify-around w-[100px] col-start-1 col-end-2 justify-self-center self-center desktop:col-start-4 desktop:col-end-5">

@@ -19,6 +19,11 @@ export default {
         sans: ["Inter", "system-ui", "Avenir", "Helvetica", "Arial", "sans-serif"],
         futura: ["Futura-pt", "system-ui", "Avenir", "Helvetica", "Arial", "sans-serif"],
       },
+      colors: {
+        primary: "#333",
+        secondary: "#f0f0f0",
+        tertiary: "#616b3a",
+      }
     },
   },
   plugins: [],
