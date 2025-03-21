@@ -40,7 +40,7 @@ const Home = () => {
         </figure>
         <article
           className="flex flex-col h-auto items-center w-screen mb-5
-                                laptop:items-center laptop:mb-5
+                                laptop:items-center laptop:mb-5 laptop: mr-10
                                 desktop:items-end desktop:justify-center desktop:text-right desktop:w-[50vw] desktop:p-5
                                 "
         >
@@ -146,7 +146,7 @@ const Home = () => {
         </figure>
         <article
           className="flex flex-col h-auto items-center w-screen mb-5
-                                laptop:items-center laptop:mb-5
+                                laptop:items-center laptop:mb-5 laptop:mr-10
                                 desktop:items-end desktop:justify-center desktop:text-right desktop:w-[50vw] desktop:p-5
                                 "
         >
