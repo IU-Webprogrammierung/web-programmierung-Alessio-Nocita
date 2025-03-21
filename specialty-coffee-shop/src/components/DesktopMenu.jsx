@@ -15,28 +15,28 @@ const DesktopMenu = () => {
                         Home
                     </NavLink>
                 </li>
-                <li className="text-md active:text-md hover:text-md focus:text-md list-none">
+                <li role="menuitem" className="text-md active:text-md hover:text-md focus:text-md list-none">
                     <NavLink 
                     className={({isActive}) => isActive ? "underline text-tertiary text-2xl font-bold hover:text-red-800 focus:text-tertiary" : "no-underline text-black text-2xl font-bold hover:text-red-800 focus:text-black"}
                     aria-label="Gehe zur 'Über uns'" to="/about">
                         Über uns
                     </NavLink>
                 </li>
-                <li className="text-md active:text-md hover:text-md focus:text-md list-none">
+                <li role="menuitem" className="text-md active:text-md hover:text-md focus:text-md list-none">
                     <NavLink 
                     className={({isActive}) => isActive ? "underline text-tertiary text-2xl font-bold hover:text-red-800 focus:text-tertiary" : "no-underline text-black text-2xl font-bold hover:text-red-800 focus:text-black"}
                     aria-label="Gehe zu 'Unser Kaffee'" to="/coffee">
                         Unser Kaffee
                     </NavLink>
                 </li>
-                <li className="text-md active:text-md hover:text-md focus:text-md list-none">
+                <li role="menuitem" className="text-md active:text-md hover:text-md focus:text-md list-none">
                     <NavLink 
                     className={({isActive}) => isActive ? "underline text-tertiary text-2xl font-bold hover:text-red-800 focus:text-tertiary" : "no-underline text-black text-2xl font-bold hover:text-red-800 focus:text-black"}
                     aria-label="Gehe zum Blog" to="/blog">
                         Blog
                     </NavLink>
                 </li>
-                <li className="text-md active:text-md hover:text-md focus:text-md list-none">
+                <li role="menuitem" className="text-md active:text-md hover:text-md focus:text-md list-none">
                     <NavLink 
                     className={({isActive}) => isActive ? "underline text-tertiary text-2xl font-bold hover:text-red-800 focus:text-tertiary" : "no-underline text-black text-2xl font-bold hover:text-red-800 focus:text-black"}
                     aria-label="Gehe zum Kontaktformular" to="/contact">

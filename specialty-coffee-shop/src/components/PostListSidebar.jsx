@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const PostListSidebar = () => {
     return(
-        <aside className="hidden text-primary bg-secondary max-w-[20vw] justify-self-end p-5 mr-10 mb-20 row-start-2 row-end-3 col-start-2 col-end-3
+        <aside role="menubar" className="hidden text-primary bg-secondary max-w-[20vw] justify-self-end p-5 mr-10 mb-20 row-start-2 row-end-3 col-start-2 col-end-3
                             desktop:block" 
                             aria-labelledby="aside-title">
             <h2 className="text-2xl text-center max-w-2/3 mb-5

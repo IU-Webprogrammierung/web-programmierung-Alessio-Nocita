@@ -5,7 +5,7 @@ import React from "react";
 
 const Burgermenu = ({ mobileMenuOpen, toggler }) => {
   return (
-    <div
+    <div role="navigation"
       className="w-[80px] tablet:w-[50px] h-[40px] relative my-0 mx-auto z-[1000] block transform rotate-0 transition duration-500 ease-in-out cursor-pointer"
       onClick={toggler}
       aria-label="Gehe zur mobilen Navigation"

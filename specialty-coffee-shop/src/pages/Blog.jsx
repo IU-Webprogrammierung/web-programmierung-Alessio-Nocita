@@ -79,6 +79,7 @@ const Blog = ({ viewport }) => {
               aria="Erfahre mehr über den Kaffee-Land Äthiopien"
               color="white"
               formValid={true}
+              role="button"
             />
           </div>
         </article>

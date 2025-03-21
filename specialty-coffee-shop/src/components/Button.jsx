@@ -39,6 +39,7 @@ const Button = ({text, link, aria, color="white", formValid}) => {
 
     return(
         <button
+            role="button"
             className={`${disabled ? "button-disabled" : `button-${buttonColor}`}`}
             aria-label={aria} 
             tabIndex="0"
