@@ -42,7 +42,7 @@ const MobileMenu = ({isOpen, toggler}) => {
 
     return(
         <nav className={`flex flex-col justify-center items-center fixed top-0 w-screen h-screen bg-primary transition-left duration-500 z-[500] ${isOpen ? "left-0" : "left-[-100vw]"}`} aria-label="Navigation-Menu">
-            <ul className="grid grid-rows-5 grid-cols-1 list-none h-2/3 w-2/3 ">
+            <ul role="menubar" className="grid grid-rows-5 grid-cols-1 list-none h-2/3 w-2/3 ">
                 <li role="menuitem" className="text-secondary no-underline text-center text-3xl cursor-pointer self-center justify-self-center hover:text-primary hover:underline">
                     <NavLink onClick={linkClickHandler} to="/" aria-label="Gehe zur Homepage">
                         Home

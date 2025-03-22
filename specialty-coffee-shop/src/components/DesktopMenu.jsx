@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 const DesktopMenu = () => {
     return(
         <nav className="hidden w-2/3 mx-auto laptop:block desktop:w-1/2" aria-label="Navigation-Menu">
-            <ul className="flex justify-between my-10 mx-auto">
+            <ul role="menubar" className="flex justify-between my-10 mx-auto">
                 <li className="text-md active:text-md hover:text-md focus:text-md list-none">
                     <NavLink to="/" 
                     className={({isActive}) => isActive ? "underline text-tertiary text-2xl font-bold hover:text-red-800 focus:text-tertiary" : "no-underline text-black text-2xl font-bold hover:text-red-800 focus:text-black"}
