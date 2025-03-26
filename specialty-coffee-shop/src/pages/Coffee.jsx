@@ -25,7 +25,7 @@ const Coffee = () => {
         </h2>
 
         <article
-          className="w-screen min-h-[330px] grid grid-cols-2 grid-rows-[auto_auto_1fr] gap-2 odd:bg-tertiary even:bg-secondary 
+          className="w-screen min-h-[330px] grid grid-cols-2 grid-rows-[auto_auto_1fr] gap-2 odd:text-white odd:bg-tertiary even:bg-secondary 
                                 laptop:odd:bg-transparent laptop:even:bg-transparent laptop:mt-10"
           aria-label="Brazil Kaffee"
         >
@@ -54,7 +54,7 @@ const Coffee = () => {
           </p>
         </article>
         <article
-          className="w-screen min-h-[330px] grid grid-cols-2 grid-rows-[auto_auto_1fr] gap-2 odd:bg-tertiary even:bg-secondary 
+          className="w-screen min-h-[330px] grid grid-cols-2 grid-rows-[auto_auto_1fr] gap-2 odd:text-white odd:bg-tertiary even:bg-secondary 
                                 laptop:odd:bg-transparent laptop:even:bg-transparent laptop:mt-10"
           aria-label="India Kaffee"
         >
@@ -84,7 +84,7 @@ const Coffee = () => {
           </p>
         </article>
         <article
-          className="w-screen min-h-[330px] grid grid-cols-2 grid-rows-[auto_auto_1fr] gap-2 odd:bg-tertiary even:bg-secondary 
+          className="w-screen min-h-[330px] grid grid-cols-2 grid-rows-[auto_auto_1fr] gap-2 odd:text-white odd:bg-tertiary even:bg-secondary 
                                 laptop:odd:bg-transparent laptop:even:bg-transparent laptop:mt-10"
           aria-label="Guatemala Kaffee"
         >
