@@ -43,6 +43,7 @@ const Home = () => {
                                 laptop:items-center laptop:mb-5 laptop: mr-10
                                 desktop:items-end desktop:justify-center desktop:text-right desktop:w-[50vw] desktop:p-5
                                 "
+                                tabIndex={0}
         >
           <h1
             className="mt-6 w-screen mx-auto text-center
@@ -77,6 +78,7 @@ const Home = () => {
             laptop:grid laptop:grid-cols-2 laptop:grid-rows-2 laptop:justify-items-center laptop:my-8
             desktop:flex desktop:flex-row desktop:justify-around desktop:w-[80vw]
             "
+            tabIndex={0}
         >
           <Card
             src={cardIcon1}
@@ -149,6 +151,7 @@ const Home = () => {
                                 laptop:items-center laptop:mb-5 laptop:mr-10
                                 desktop:items-end desktop:justify-center desktop:text-right desktop:w-[50vw] desktop:p-5
                                 "
+                                tabIndex={0}
         >
           <h1
             className="mt-6 text-center
@@ -184,6 +187,7 @@ const Home = () => {
         <article
           className="flex flex-col-reverse w-screen items-center font-bold text-center
                         desktop:flex-row desktop:justify-between desktop:text-left"
+          tabIndex={0}
         >
           <div
             className="flex flex-col justify-center text-center w-3/4 p-5 items-center
