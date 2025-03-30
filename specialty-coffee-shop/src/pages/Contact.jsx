@@ -177,7 +177,7 @@ const Contact = () => {
                         desktop:w-1/3"
       >
         <label
-          className="w-5/6 tablet:w-2/3 my-2 border text-left"
+          className="w-5/6 tablet:w-2/3 my-2 text-left"
           id="first-name-label"
           htmlFor="first-name"
         >
@@ -196,7 +196,7 @@ const Contact = () => {
         />
         <div className="w-5/6 tablet:w-2/3 my-2 text-left text-md text-red-800">{firstNameErrorMessage}</div>
         <label
-          className="w-5/6 tablet:w-2/3 my-2 border  text-left"
+          className="w-5/6 tablet:w-2/3 my-2 text-left"
           id="surname-label"
           htmlFor="last-name"
         >
@@ -215,7 +215,7 @@ const Contact = () => {
         />
         <div className="w-5/6 tablet:w-2/3 my-2 text-left text-md text-red-800">{lastNameErrorMessage}</div>
 
-        <label className="w-5/6 tablet:w-2/3 my-2 border text-left" htmlFor="email">
+        <label className="w-5/6 tablet:w-2/3 my-2 text-left" htmlFor="email">
           E-Mail:
         </label>
         <input
@@ -230,7 +230,7 @@ const Contact = () => {
         />
         <div className="w-5/6 tablet:w-2/3 my-2 text-left text-md text-red-800">{emailErrorMessage}</div>
         <label
-          className="w-5/6 tablet:w-2/3 my-2 border text-left"
+          className="w-5/6 tablet:w-2/3 my-2 text-left"
           htmlFor="message"
         >
           Nachricht:
