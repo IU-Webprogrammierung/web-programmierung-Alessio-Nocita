@@ -25,8 +25,8 @@ const Coffee = () => {
         </h2>
 
         <article
-          className="w-screen min-h-[330px] grid grid-cols-2 grid-rows-[auto_auto_1fr] gap-2 odd:text-white odd:bg-tertiary even:bg-secondary 
-                                laptop:odd:bg-transparent laptop:even:bg-transparent laptop:mt-10"
+          className="w-screen min-h-[330px] grid grid-cols-2 grid-rows-[auto_auto_1fr] gap-2 text-primary odd:text-white odd:bg-tertiary even:bg-secondary 
+                                laptop:odd:bg-transparent laptop:even:bg-transparent laptop:odd:text-primary laptop:mt-10"
           aria-label="Brazil Kaffee"
         >
           <figure className="col-start-1 col-end-2 row-start-1 row-end-4 justify-self-center desktop:justify-self-end">
@@ -54,8 +54,8 @@ const Coffee = () => {
           </p>
         </article>
         <article
-          className="w-screen min-h-[330px] grid grid-cols-2 grid-rows-[auto_auto_1fr] gap-2 odd:text-white odd:bg-tertiary even:bg-secondary 
-                                laptop:odd:bg-transparent laptop:even:bg-transparent laptop:mt-10"
+          className="w-screen min-h-[330px] grid grid-cols-2 grid-rows-[auto_auto_1fr] gap-2 text-primary odd:text-white odd:bg-tertiary even:bg-secondary 
+                                laptop:odd:bg-transparent laptop:even:bg-transparent laptop:odd:text-primary laptop:mt-10"
           aria-label="India Kaffee"
         >
           <figure className="col-start-1 col-end-2 row-start-1 row-end-4 justify-self-center desktop:justify-self-end">
@@ -84,8 +84,8 @@ const Coffee = () => {
           </p>
         </article>
         <article
-          className="w-screen min-h-[330px] grid grid-cols-2 grid-rows-[auto_auto_1fr] gap-2 odd:text-white odd:bg-tertiary even:bg-secondary 
-                                laptop:odd:bg-transparent laptop:even:bg-transparent laptop:mt-10"
+          className="w-screen min-h-[330px] grid grid-cols-2 grid-rows-[auto_auto_1fr] gap-2 text-primary odd:text-white odd:bg-tertiary even:bg-secondary 
+                                laptop:odd:bg-transparent laptop:even:bg-transparent laptop:odd:text-primary laptop:mt-10"
           aria-label="Guatemala Kaffee"
         >
           <figure className="col-start-1 col-end-2 row-start-1 row-end-4 justify-self-center desktop:justify-self-end">
