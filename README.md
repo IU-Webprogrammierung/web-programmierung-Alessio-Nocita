@@ -51,9 +51,16 @@ npm install
 ```
 
 Das Projekt kann dann im Development Modus gestartet werden mit:
+
+```bash
+npx tailwindcss -i ./src/index.css -o ./dist/output.css --config tailwind.config.cjs --watch
+```
+(dies macht alle Tailwind-Styles zugänglich)
+gefolgt von:
 ```bash
 npm run dev
 ```
+(dies aktiviert der Development-Server)
 und im Browser dann unter [http://localhost:5173/](http://localhost:5173/) angeschaut werden.
 
 Dazu ist eine Online-Ansicht der Website (passend zum aktuellen Stand)  [hier](http://64.227.117.137/) verfügbar.
@@ -79,9 +86,9 @@ Auf weiteres SASS und Javascript-Code wurde vorerst verzichtet, mit Ausnahme von
 
 
 ### 2. Erarbeitungsphase
-
+In der **Erarbeitungsphase** wurden alle Styles in SASS Code implementiert. Dafür wurden die schon vorhandenen SASS Modules mit Inhalt gefüllt. Ausserdem wurde die Funktionalität des Burgermenu auch implementiert. 
 
 ### 3. Finalisierungsphase
-
+In der **Finalisierungsphase** wurde die Seite komplett einem Refactor mit Tailwind unterzogen und die SASS-Modules anschließend gelöscht. Ausserdem wurde zusätzlich zur HTML-Validierung des Kontaktformulars eine Javascript-Validierung implementiert.
 
 
